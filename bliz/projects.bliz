@@ -1,0 +1,40 @@
+% gem_header 20 'text/gemini'
+% # vi: ft=gemtext
+
+# Projects
+
+## Cool things you might want to use
+
+=> https://sr.ht/~tim-clifford/vim-venus Venus, a vim plugin for executing code and making documents
+=> https://git.sr.ht/~tim-clifford/vim-qalc vim-qalc, a vim plugin for evaluating maths expressions
+=> https://git.sr.ht/~tim-clifford/polybar-power polybar-power, a battery time widget and notifier for polybar
+=> https://github.com/windows-bad/polybar-player polybar-player, an audio metadata and control interface for polybar
+
+## Other cool things
+
+=> https://git.sr.ht/~tim-clifford/ErgoDash-R ErgoDash-R, a custom keyboard with thumb scroll wheels
+=> https://github.com/smh-my-head/hades Hades, a minimal VM for running SolidWorks on Linux
+=> https://github.com/smh-my-head/charon Charon, a git integration for SolidWorks
+=> https://git.sr.ht/~tim-clifford/.config Personal config files, (rad and overengineered meta-config scripts!)
+=> https://git.sr.ht/~tim-clifford/nvimrc Personal neovim config, (rad and undertested regexes!)
+
+## Silly things
+
+=> https://git.sr.ht/~tim-clifford/pixel-prime Pixel Prime, a program which renders an image as a prime number
+=> https://git.sr.ht/~tim-clifford/RedditGarlicRobot u/garlicbot, a reddit bot from 2017 which gave people virtual garlic bread
+=> https://git.sr.ht/~tim-clifford/casio-cpong PONG written for the fx9860gII calculator
+
+## Dracula themes
+
+I've made *a lot*. They look nice, okay? (and there are more coming)
+
+=> https://github.com/dracula/matplotlib matplotlib
+=> https://github.com/dracula/xournalpp Xournal++
+=> https://github.com/dracula/libreoffice LibreOffice
+=> https://github.com/dracula/tty TTY
+=> https://github.com/dracula/dunst Dunst
+=> https://github.com/dracula/latex LaTeX
+=> https://github.com/dracula/ltspice LTSpice
+=> https://github.com/dracula/pandoc Pandoc
+=> https://github.com/dracula/freecad FreeCAD
+=> https://github.com/dracula/solidworks SolidWorks

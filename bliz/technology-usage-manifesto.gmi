@@ -1,0 +1,150 @@
+# Technology Usage Manifesto
+
+This document lays out a set of rules that I will follow in order to protect myself from the pitfalls of modern technology.
+
+## 0: Aims
+
+The consequences of aims often have implicit assumptions and always have limitations. I've tried to set them all out explicitly here.
+
+### 0.1: Protect my personal data
+
+Assumptions:
+
+* No other party can be trusted to hold data securely.
+* No proprietary software can be proven or trusted to not contain spyware.
+* I can trust: modern encryption standards, containerisation, hardware.
+
+Limitations:
+
+* Hardware definitely can't be trusted
+* Containerisation/hypervisors probably can't be trusted
+* FOSS can still contain spyware, even though it is less common. Perhaps even FOSS software should be containerised.
+
+### 0.2: Have sovereignty over software I depend on
+
+Assumptions:
+
+* Having the rights to a piece of software's source code is both necessary and sufficient for sovereignty.
+* These rights cannot be removed after they are given. This is correct for all FOSS licenses I know of, with GPL also protecting future derivatives.
+
+Limitations:
+
+* If software becomes unmaintained, you must be able to take over maintenance, or it doesn't matter anyway.
+
+### 0.3: Fight against the usage of Big Data to influence public opinion
+
+Comments:
+
+* This can be used for both advertising, and, more worryingly, determining and/or influencing political beliefs.
+
+### 0.4: Make a statement about the importance of FOSS
+
+Assumptions:
+
+* someone will care lol
+
+Limitations:
+
+* There is a fine line between sticking to your beliefs and being an ass.
+* People might think that free software advocates are insane if I don't explain it well.
+
+## 1: Internet connected software
+
+Programs which only communicate with machines I control are not subject to these conditions.
+
+1.0) I will not consume media over a network through a means where different usages can be correlated with each other. (Aim 3)
+
+1.0) (comment) So I can't authenticate, I can't be personably identifiable, and I must prevent fingerprinting (i.e. (1.2))
+
+1.1) I will not access a remote server that requires authentication, unless I accept that (a) my account may be breached or deleted at any time without warning, and (b) any data I provide will be public knowledge. (Aims 1 and 2)
+
+1.1) (comment) I may use a cloud storage provider I do not trust, provided that the data is both mirrored to a local drive/NAS and either public or protected with end-to-end encryption. File metadata must be hidden as well as file contents.
+
+1.2) Unless (1.1) applies, I will only access remote servers through Tor or similar, to prevent fingerprinting. (Aim 1)
+
+1.2) (comment) Further anti-fingerprinting measures should also be taken when possible, e.g. modifying user agent strings to the most common option. (Aim 1)
+
+1.3) I will not grant a remote server access to any sensing peripherals (e.g. microphone or camera), unless it is verifiably protected by client-side end-to-end encryption. (Aims 1 and 3)
+
+1.4) If free (libre) or trivial code is downloaded from a remote server and then immediately executed (e.g. JavaScript), only *the source itself* should be whitelisted, not the remote server, to prevent a bait-and-switch scenario. (Aims 1 and 2)
+
+## 2: Software
+
+In this section, an "untrusted sandbox" (US) refers to a sandbox used for running untrusted software, and can be either a container on a hardened kernel, a VM, or a dedicated untrusted machine. Note that a dedicated machine is far more secure than the other two options.
+
+2.0) I will not depend on any proprietary software. (Aim 2)
+
+2.0) (comment) I may use proprietary software for ephemeral applications, or when a suitable alternative is easy to come by and the switching cost is manageable on short notice.
+
+2.1) Proprietary software must be run in a US. (Aim 1)
+
+2.2) USes can have either read-only access to private data, or a network connection, but never both at the same time. (Aim 1)
+
+2.3) A US that has previously had network access can later have access to private data, but a US that has previously had access to private data can never have network access. (Aim 1)
+
+2.4) USes should be reverted to a clean state after every use. (Aim 1)
+
+## 3: Firmware
+
+3.0) I will use proprietary firmware only if no FOSS firmware exists, and if having no firmware would render the device useless (Aims 1, 2, and 4)
+
+3.1) I will not purchase a device that requires proprietary firmware unless there is no other suitable device in that class (Aims 1, 2, and 4)
+
+3.2) When transitioning from a device with proprietary firmware to a device with FOSS firmware, I will assume all data on the original device is compromised and malicious. (Aim 1)
+
+## 4: Other people
+
+4.0) I will not be pressured into using software without first taking the time to consider this manifesto.
+
+4.1) If I am pressured to contravene this manifesto against my will, I will seek solutions that contravene the aims in descending order. If Aim 1 must be contravened, it should be done in a way that compromises the smallest amount of the least sensitive data possible.
+
+4.2) When transferring data to a person who does not comply with this manifesto or a similar one, I will assume it is public and compromised. (Aims 1 and 4)
+
+4.3) I will not use a proprietary messaging service, unless it can be adequately bridged to a FOSS client. (Aims 1 and 2)
+
+4.4) I will not use a messaging service unless it has verifiable FOSS end-to-end encryption, except when the messages are public (this includes email unless PGP is used) (Aims 1 and 4)
+
+4.4) (comment) i.e. components of the communication channel can be proprietary/untrustable, as long as the E2E encryption is FOSS. Ideally the entire communication channel would be decentralised in order to protect metadata (e.g. Matrix), but this is not a requirement.
+
+## 5: Other computers
+
+5.0) I may use computers I do not trust, but I must assume anything I do on the system is public knowledge. (Aim 1)
+
+## 6: Workplace software
+
+6.0) An organisation I work for is responsible for the work I do, but not my personal data. I need not apply this manifesto to workplace computing, except where it applies to personal data.
+
+6.0) (comment) A clear segregation should be made between personal computing and workplace computing.
+
+6.1) I will, where possible, encourage organisations I work for to apply similar goals to their internal practices.
+
+## Addendum: current changes that need to be made
+
+```table
+┌─────────────────────────────┬────────────────────────────────────────────────┐
+│          Software           │                  Replacement                   │
+╞═════════════════════════════╪════════════════════════════════════════════════╡
+│ Audio Consumption (Spotify) │ Torrents? CD ripping? mp3 purchasing?          │
+├─────────────────────────────┼────────────────────────────────────────────────┤
+│ YouTube                     │ Selfhosted Invidious or CloudTube              │
+├─────────────────────────────┼────────────────────────────────────────────────┤
+│ Traditional TV/movies       │ Torrents? Blu-ray ripping?                     │
+├─────────────────────────────┼────────────────────────────────────────────────┤
+│ Cloud Storage (backup)      │ Borg + Backblaze and local storage             │
+├─────────────────────────────┼────────────────────────────────────────────────┤
+│ Cloud Storage (continuous)  │ VPS/equivalent + E2E encryption + SFTP         │
+├─────────────────────────────┼────────────────────────────────────────────────┤
+│ Gaming                      │ Public metadata + containerised Steam? Hmm.    │
+├─────────────────────────────┼────────────────────────────────────────────────┤
+│ MessageEase keyboard        │ Build my own                                   │
+├─────────────────────────────┼────────────────────────────────────────────────┤
+│ DnD beyond                  │ Find alternative? Build my own? Use paper?     │
+├─────────────────────────────┼────────────────────────────────────────────────┤
+│ Google Photos               │ Just use SFTP-backed folders lol               │
+├─────────────────────────────┼────────────────────────────────────────────────┤
+│                             │ Just don't use? Fediverse stuff? Probably      │
+│ Social media                │ empty account and use FOSS frontend selfhosted │
+│                             │ with authentication of my account (is this     │
+│                             │ possible? probably...)                         │
+└─────────────────────────────┴────────────────────────────────────────────────┘
+```

@@ -1,0 +1,21 @@
+colors:
+  pink: "#ff79c6"
+  purple: "#bd93f9"
+  cyan: "#8be9fd"
+  green: "#50fa7b"
+  yellow: "#f1fa8c"
+  orange: "#ffb86c"
+
+color_cycle:
+  cyan
+  purple
+  pink
+  orange
+  yellow
+  green
+
+page_colors:
+  _: purple
+  _dracula: pink
+  _blog: cyan
+  _why_pgp: yellow

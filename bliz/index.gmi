@@ -1,0 +1,21 @@
+# Hi!
+
+// TODO: ascii art
+
+I'm an engineering student, tinkerer, and free (libre) nutter.
+
+=> /technology-usage-manifesto.gmi Technology Usage Manifesto
+=> /blog/ Blog
+=> /twtxt.txt twtxt
+=> /projects.bliz Projects
+=> /opinions.gmi Random opinions
+=> /things-i-enjoy.gmi Things I enjoy
+=> /fun-prime-number.gmi A fun prime number
+=> /contact.gmi Contact
+=> https://git.sr.ht/~tim-clifford/tim.clifford.lol Source code
+
+The content for this site is CC-BY-SA. The source code is AGPLv3.
+
+This site is hosted on the SRCF[8] webserver. It's currently hogging port 1965, so if anyone else wants to host there we'll have to have a duel over it.
+
+=> https://srcf.net SRCF

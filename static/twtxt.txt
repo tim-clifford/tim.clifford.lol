@@ -1,0 +1,5 @@
+# nick = tim-clifford
+# matrix = @tim:clifford.lol
+
+2022-02-18T14:41:48+00:00	The wind's super gnarly today (gusting 60 knots!) but people are saying I can't windsurf because of silly things like "You could die" and "There's no safety cover". Smh.
+2022-02-25T12:04:31+00:00	probably-not-unpopular opinion: rclone's man page is terrible. It's packed with uninteresting crap, most notably installation instructions. If I wanted installation instructions, I wouldn't already have the man page! Not to mention the fact that it recommends installing via `curl ... | bash`, which nobody should ever do.

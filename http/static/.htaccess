@@ -1,0 +1,18 @@
+RewriteEngine On
+
+# Some alternate urls
+RewriteRule ^pgp$ https://tim.clifford.lol/tim_clifford.asc [L,R=301]
+RewriteRule ^gpg$ https://tim.clifford.lol/tim_clifford.asc [L,R=301]
+RewriteRule ^tim_clifford.gpg$ https://tim.clifford.lol/tim_clifford.asc [L,R=301]
+
+## This was the url in my email footer for a bit
+RewriteRule ^why_pgp$ https://tim.clifford.lol/why-pgp [L,R=301]
+
+## I link to this enough to warrant it
+RewriteRule ^why-foss$ https://tim.clifford.lol/blog/why-foss [L,R=301]
+
+# Force HTTPS
+RewriteCond %{HTTP_HOST} !^tim\.clifford\.lol$ [NC]
+RewriteRule ^(.*)$ https://tim.clifford.lol%{REQUEST_URI} [L,R=301]
+
+ErrorDocument 404 /404.html

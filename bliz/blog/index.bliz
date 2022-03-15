@@ -1,0 +1,31 @@
+%%%
+gem_header 20 'text/gemini'
+set b_current_time (date +%c)
+set b_words (bliz_word_count)
+%%%
+
+# Tim's blog
+
+%%%dash
+# I like writing in POSIX sh, I just like the speed and it makes me ~feel cool~
+cd /home/tc565/bliz/serve/blog
+find . -mindepth 1 -maxdepth 1 ! -name 'index.*' | while read post; do
+	# why do I feel like this is one of those "too complicated" scripts
+	if test -f "$post"; then
+		index=$post
+	else
+		index=$post/index.*
+		post=${post}/
+	fi
+	if ! echo $index | egrep -q '\.(gmi|bliz)$'; then
+		continue
+	fi
+	title=$(sed -n '/^#/{s/# *//p;q}' $index)
+	date="$(sed -n \
+		's/.*\([[:digit:]]\{4\}-[[:digit:]]\{2\}-[[:digit:]]\{2\}\).*/\1/p' \
+		$index | head -n1)"
+	echo "=> ./$post $date - $title"
+done | sort -rk 3,3 # could fail if there is a space in $post ig but who cares
+cd - >/dev/null
+%%%
+

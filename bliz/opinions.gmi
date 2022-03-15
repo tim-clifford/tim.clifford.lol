@@ -1,0 +1,29 @@
+# Opinions
+
+These are the short versions of my opinions, so feel free to send me an angry message if you want me to explain properly. I've also definitely forgotten some important ones...
+
+## On proprietary things
+
+* proprietary software is malware (this is quite extreme but the phrase is fun to say when I see people using Windows)
+* proprietary firmware is stupid and benefits nobody
+* proprietary hardware makes a tiny bit of sense but schematics should always be available
+
+## On other technology
+
+* mindless consumerism is ruining the world, can't we build robust tech?
+* repair >> recycle and many companies either don't understand this or willfully ignore it (*ahem* Apple)
+* decentralized and federated systems are usually better, but cryptocurrency in its current state isn't working
+* people care too little about backwards compatibility (looking at you python devs, the fact that virtualenvs are necessary is awful)
+* can pip/npm/cargo/stack/etc please stop trying to take over the job of the distro's package manager
+* can people stop putting `#!/bin/sh` at the top and then writing bash, jfc, like either write POSIX-compliant shell or put `#!/bin/bash` at the top
+
+## On social and political things
+
+* nobody has nothing to hide
+* never trust a megacorporation
+* people don't fit in boxes (figuratively speaking)
+* tax the rich
+
+## On Food
+
+* pineapple pizza is good (but pineapple with pepperoni is strange)
