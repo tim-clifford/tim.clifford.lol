@@ -10,9 +10,16 @@ Download my GPG public key [here](/tim_clifford.gpg)
 
 ## CUSF
 
-Currently I am the Treasurer and Head of DevOps for Cambridge University
-Spaceflight, a student society aiming to reach the Karman Line by 2023.
-For more information, visit our website [here](https://www.cusf.co.uk)
+I'm the Head of DevOps for Cambridge University Spaceflight, a student society
+aiming to reach the Karman Line by 2023. See more
+[here](https://www.cusf.co.uk)
+
+## SRCF
+
+I'm also Chair of the Student Run Computing Facility, a a volunteer-run student
+society that provides free, useful and flexible computing and network services
+for University of Cambridge staff and students. See more
+[here](https://www.srcf.net)
 
 ## GitHub Stats
 
