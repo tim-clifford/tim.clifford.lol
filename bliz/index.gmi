@@ -1,21 +1,53 @@
 # Hi!
 
-// TODO: ascii art
+```ASCII art of a guitar with text: Tim Clifford
+                                                  o
+                                              o   \\_._
+                                              \\_.-'   \
+                                               /   _\\  \
+                                           _.-'_\\'_.\\  \
+                                       _.-'_.-'_.\\   _.-'
+                      _.---._      _.-'_.-'_.-'_.._.-' \\
+                   .-'       \ _.-'_.-'_.-'_.-'    \\   O
+       ,-'""""--.-'           '_.-'_.-'_.-'         O
+     .'                    _.-'_.-'_.-'
+    /      .           _.-'_.-' ..'
+   |       \\      _.-'_.-'      \
+   |        \\__.-'_.-'          |
+   '         \\_.-'             /
+    \         \\          _._.-'
+     \         \\      .-'       \^o^/
+      \         `     /
+       \             /        Tim Clifford
+        '._       _.'
+           '-----'
+
+```
 
 I'm an engineering student, tinkerer, and free (libre) nutter.
 
-=> /technology-usage-manifesto.gmi Technology Usage Manifesto
+## Main links
+
 => /blog/ Blog
-=> /twtxt.txt twtxt
+=> /technology-usage-manifesto.gmi Technology Usage Manifesto
 => /projects.bliz Projects
-=> /opinions.gmi Random opinions
+
+## Fun stuff
+
+=> /friends.gmi Friends \o/
 => /things-i-enjoy.gmi Things I enjoy
+=> /plant.bliz My plant
 => /fun-prime-number.gmi A fun prime number
+
+## Other stuff
+
+=> /opinions.gmi Random opinions
 => /contact.gmi Contact
+=> /twtxt.txt twtxt
 => https://git.sr.ht/~tim-clifford/tim.clifford.lol Source code
 
 The content for this site is CC-BY-SA. The source code is AGPLv3.
 
-This site is hosted on the SRCF[8] webserver. It's currently hogging port 1965, so if anyone else wants to host there we'll have to have a duel over it.
+This site is hosted on the SRCF webserver. It's currently hogging port 1965, so if anyone else wants to host there we'll have to have a duel over it.
 
 => https://srcf.net SRCF

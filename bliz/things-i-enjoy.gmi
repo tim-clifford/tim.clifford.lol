@@ -4,12 +4,9 @@ Lots of things really. Here are some highlights to check out (if you want)
 
 ## Gemini pages/blogs
 
-Hopefully this list expands quickly as I expore geminispace. Send me yours if you think it's cool!
-
-(in no particular order)
+=> /friends.gmi My friends' ones, of course
 
 => gemini://drewdevault.com Drew DeVault's
-=> gemini://cadence.moe Cadence's
 => gemini://commie.space lel's
 
 ## Other things

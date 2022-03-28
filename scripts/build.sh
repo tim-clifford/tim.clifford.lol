@@ -43,4 +43,16 @@ build_bliz() {
 	cp -r static/.[!.]* out/bliz/
 }
 
+if [ $# -eq 0 ] || [ "$1" = "--all" ]; then
+	build_blog_alts
+	build_http
+	build_bliz
+elif [ "$1" = "--blog" ]; then
+	build_blog_alts
+elif [ "$1" = "--bliz" ]; then
+	build_bliz
+elif [ "$1" = "--http" ]; then
+	build_http
+fi
+
 cd - >/dev/null
