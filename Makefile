@@ -3,7 +3,9 @@ all:
 blog_alts:
 	./scripts/build.sh --blog
 gemini:
-	./scripts/build.sh --bliz && rsync -a --delete out/bliz/ pip:bliz/serve
+	./scripts/build.sh --bliz && \
+	rsync -a --delete out/bliz/ pip:bliz/serve && \
+	rsync -a --delete --exclude=hits.db bliz_config/ pip:bliz/personal
 build:
 	./scripts/build.sh --all
 deploy:
