@@ -11,7 +11,7 @@ md_color_headings() { # $1: start color
 	start_color="$1"
 	color_current="$(echo "$color_cycle" | grep -A9999 "$1")"
 
-	while read line; do
+	while IFS= read -r line; do
 		if echo "$line" | grep -Eq '^##[^#]'; then
 			color_current="$(echo "$color_current" | tail -n +2)"
 			if [ -z "$color_current" ]; then

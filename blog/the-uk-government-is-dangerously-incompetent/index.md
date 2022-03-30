@@ -15,14 +15,11 @@ such an evil-sounding name??
 Lifted shamelessly from
 [wikipedia](https://en.wikipedia.org/wiki/End-to-end_encryption):
 
-<blockquote style="margin-left: 40px">
-End-to-end encryption (E2EE) is a system of communication where only the
-communicating users can read the messages. In principle, it prevents potential
-eavesdroppers – including telecom providers, Internet providers, malicious
-state bodies, and even the provider of the communication service – from being
-able to access the cryptographic keys needed to decrypt the conversation.
-</blockquote>
-<p/>
+> End-to-end encryption (E2EE) is a system of communication where only the
+> communicating users can read the messages. In principle, it prevents potential
+> eavesdroppers – including telecom providers, Internet providers, malicious
+> state bodies, and even the provider of the communication service – from being
+> able to access the cryptographic keys needed to decrypt the conversation.
 
 ## Why do the UK government claim they oppose it?
 

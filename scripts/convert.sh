@@ -36,8 +36,10 @@ convert_to_email() { # args -> stdout
 	mdfile="$3"
 	txtfile="$4"
 	url="$5"
+	gemurl="$(echo "$5" | sed 's/^https\?/gemini/')"
 
 	echo "\
+From: blog@clifford.lol
 To: $recipient
 Subject: $subject
 MIME-Version: 1.0
@@ -49,6 +51,9 @@ Content-Type: text/html; charset=utf-8
 <p>
   <a href=\"$url\">View in a browser</a>
 </p>
+<p>
+  <a href=\"$gemurl\">Or on Gemini</a>
+</p>
 
 $(pandoc "$mdfile" --from markdown --to html)
 
@@ -56,6 +61,7 @@ $(pandoc "$mdfile" --from markdown --to html)
 Content-Type: text/plain; charset=utf-8
 
 View in a browser: $url
+Or on Gemini: $gemurl
 $(cat "$txtfile")
 
 ---
@@ -101,8 +107,8 @@ convert_blog_to_bliz_txt_eml() { # $1: filename, writes to files
 
 	if ! test -f $f_eml; then
 		mkdir -p "$(dirname $f_eml)"
-		echo "$stripped_md" | convert_to_email blog@clifford.lol "Blog | $title" \
-			/dev/stdin $f_txt $httpurl >$f_eml
+		echo "$stripped_md" | convert_to_email tc565-blog@srcf.net \
+			"Blog | $title" /dev/stdin $f_txt $httpurl >$f_eml
 	fi
 }
 
