@@ -27,10 +27,10 @@ I don't use GitHub anymore because it's proprietary: I
 use [sourcehut](https://sourcehut.org) instead. These stats are fun
 though (and I do intend to mirror most projects to GitHub anyway).
 
-<a href="https://github.com/anuraghazra/github-readme-stats">
+<a class="nounderline" href="https://github.com/anuraghazra/github-readme-stats">
 	<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tim-clifford&amp;layout=compact&amp;theme=dracula&amp;langs_count=6&amp;hide_border=true&amp;card_width=445" width="49.3%"/>
 </a>
-<a href="https://github.com/anuraghazra/github-readme-stats">
+<a class="nounderline" href="https://github.com/anuraghazra/github-readme-stats">
 	<img align="center" src="https://github-readme-stats.vercel.app/api?username=tim-clifford&amp;show_icons=true&amp;theme=dracula&amp;include_all_commits=true&amp;hide_title=true&amp;count_private=true&amp;hide_border=true" width="49.3%"/>
 </a>
 
@@ -42,22 +42,22 @@ comfortable as possible. Here are some projects that help me do that.
 
 *See also [Dracula](https://tim.clifford.lol/dracula)*
 
-<a href="https://github.com/tim-clifford/.config">
+<a class="nounderline" href="https://github.com/tim-clifford/.config">
 	<img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=tim-clifford&amp;repo=.config&amp;theme=dracula&amp;hide_border=true" width="32.7%"/>
 </a>
-<a href="https://github.com/tim-clifford/nvimrc">
+<a class="nounderline" href="https://github.com/tim-clifford/nvimrc">
 	<img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=tim-clifford&amp;repo=nvimrc&amp;theme=dracula&amp;hide_border=true" width="32.7%"/>
 </a>
-<a href="https://github.com/tim-clifford/vim-venus">
+<a class="nounderline" href="https://github.com/tim-clifford/vim-venus">
 	<img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=tim-clifford&amp;repo=vim-venus&amp;theme=dracula&amp;hide_border=true" width="32.7%"/>
 </a>
-<a href="https://github.com/smh-my-head/charon">
+<a class="nounderline" href="https://github.com/smh-my-head/charon">
 	<img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smh-my-head&amp;repo=charon&amp;theme=dracula&amp;hide_border=true" width="32.7%"/>
 </a>
-<a href="https://github.com/smh-my-head/hades">
+<a class="nounderline" href="https://github.com/smh-my-head/hades">
 	<img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smh-my-head&amp;repo=hades&amp;theme=dracula&amp;hide_border=true" width="32.7%"/>
 </a>
-<a href="https://github.com/tim-clifford/ErgoDash-R">
+<a class="nounderline" href="https://github.com/tim-clifford/ErgoDash-R">
 	<img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=tim-clifford&amp;repo=ErgoDash-R&amp;theme=dracula&amp;hide_border=true" width="32.7%"/>
 </a>
 
@@ -65,12 +65,12 @@ comfortable as possible. Here are some projects that help me do that.
 
 Fun things I've worked on in the past
 
-<a href="https://github.com/tim-clifford/pixel-prime">
+<a class="nounderline" href="https://github.com/tim-clifford/pixel-prime">
 	<img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=tim-clifford&amp;repo=pixel-prime&amp;theme=dracula&amp;hide_border=true" width="32.7%"/>
 </a>
-<a href="https://github.com/tim-clifford/casio-cpong">
+<a class="nounderline" href="https://github.com/tim-clifford/casio-cpong">
 	<img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=tim-clifford&amp;repo=casio-cpong&amp;theme=dracula&amp;hide_border=true" width="32.7%"/>
 </a>
-<a href="https://github.com/tim-clifford/astrodynamics-sim">
+<a class="nounderline" href="https://github.com/tim-clifford/astrodynamics-sim">
 	<img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=tim-clifford&amp;repo=astrodynamics-sim&amp;theme=dracula&amp;hide_border=true" width="32.7%"/>
 </a>

@@ -626,6 +626,10 @@ a {
   border-bottom: 2px solid rgba(241, 250, 140, 1);
 }
 
+.nounderline {
+  border-bottom: none !important;
+}
+
 .single figure {
   margin-Bottom: 20px;
   text-align: center
