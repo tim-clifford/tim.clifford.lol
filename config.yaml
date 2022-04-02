@@ -7,14 +7,17 @@ colors:
   orange: "#ffb86c"
 
 color_cycle:
+  green
   cyan
   purple
   pink
   yellow
-  green
 
 page_colors:
   _: purple
+  _about: green
   _dracula: pink
   _blog: cyan
   _why_pgp: yellow
+  _documents_cypherpunks_manifesto_md: purple
+  _documents_technology_usage_manifesto_md: orange

@@ -1,3 +1,5 @@
+default:
+	make build
 all:
 	make clean && make build && make deploy
 blog_alts:

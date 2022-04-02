@@ -3,17 +3,19 @@
 
 # Hi!
 
-% cat serve/ascii-art/guitar.gmi
+```ANSI-ASCII art of a guitar with text: Tim Clifford
+% cat serve/ascii-art/guitar.txt
+```
 
-=> /ascii-art/guitar-noansi.gmi ASCII art above but without ANSI color codes
+=> /ascii-art/guitar-noansi.txt ASCII art above but without ANSI color codes
 
-I'm an engineering student, cypherpunk, and free (libre) nutter.
+I'm an engineering student, cypherpunk, space enthusiast, and free (libre) nutter.
 
 ## Main links
 
 => /blog/ Blog
 => /technology-usage-manifesto.gmi Technology Usage Manifesto
-=> /redist/cypherpunks-manifesto.gmi A Cypherpunk's Manifesto
+=> /documents/cypherpunks-manifesto.gmi A Cypherpunk's Manifesto
 => /projects.bliz Projects
 
 ## Fun stuff

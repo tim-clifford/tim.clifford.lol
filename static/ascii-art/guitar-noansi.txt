@@ -1,4 +1,3 @@
-```ASCII art of a guitar with text: Tim Clifford
 
                                                       o
                                                   o   \\_._
@@ -22,4 +21,3 @@
         '._      _.'
            `----'
 
-```

@@ -31,7 +31,13 @@ md_color_headings() { # $1: start color
 
 html_build_md_page() { # $1: filename, writes to out/http/
 	file="$1"
-	escaped_name="$(dirname "$file" | perl -pe 's|.*?md/?|/|;s|[/-]|_|g;')"
+	escaped_name="$(
+		((echo "$file" | grep -Eq 'index.md$') \
+			&& dirname "$file" \
+			|| echo "$file" \
+		) | perl -pe 's|.*?md/?|/|;s|[/.-]|_|g;')"
+	echo "$escaped_name"
+
 	out_file="$(echo "$file" | sed 's|^http/md/|out/http/|; s|.md$|.html|')"
 	mkdir -p "$(dirname $out_file)"
 
