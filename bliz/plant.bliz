@@ -5,13 +5,11 @@
 
 please water my plant if it's dying ^o^
 
-%%% dash
-# get the actual plant
-echo "gemini://astrobotany.mozz.us/public/5c5e19e2e9e04609ac179aa195f8921f/m1" \
-	| openssl s_client -crlf -quiet \
-		-connect astrobotany.mozz.us:1965 \
-		-servername astrobotany.mozz.us \
-		2>/dev/null \
-	| tail -n +3 | sed 's/^=>/'"\n=>/"
-	# ^ take off header and title, give the link a little more space
 %%%
+proxy_site "gemini://astrobotany.mozz.us/public/5c5e19e2e9e04609ac179aa195f8921f/m1" \
+	| sed '1d; /^=>/d'
+	# ^ take off header and link
+%%%
+
+=> gemini://astrobotany.mozz.us/ Get a plant!
+=> gemini://astrobotany.mozz.us/app/visit/5c5e19e2e9e04609ac179aa195f8921f Water my plant (requires client certificate)
