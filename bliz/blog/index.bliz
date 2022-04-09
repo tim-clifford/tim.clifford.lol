@@ -2,9 +2,12 @@
 gem_header 20 'text/gemini'
 set b_current_time (date +%c)
 set b_words (bliz_word_count)
+# vi: ft=gemtext
 %%%
 
 # Tim's blog
+
+=> /subscribe.bliz Subscribe via email
 
 %%%dash
 # I like writing in POSIX sh, I just like the speed and it makes me ~feel cool~

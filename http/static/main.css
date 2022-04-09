@@ -108,6 +108,13 @@ nav ul li a {
   margin-left: 20px;
 }
 
+@media screen and (max-width: 420px) {
+  nav ul li a {
+    font-size: 15px;
+    margin-left: 15px;
+  }
+}
+
 .cyan nav ul li a:hover {
   border-color: rgba(139, 233, 253, 1);
   color: rgba(139, 233, 253, 1);
@@ -1202,14 +1209,9 @@ th, td {
 }
 
 .Topbar_nav {
-  background-color: rgb(26, 27, 34);
-  background-image: none;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px 0px;
-}
-.Topbar_nav {
   background: #20222b;
-    background-color: rgb(32, 34, 43);
-    background-image: none;
+  background-color: rgb(32, 34, 43);
+  background-image: none;
   height: 50px;
   padding: 5px;
   display: flex;
@@ -1247,6 +1249,15 @@ th, td {
 	font-size:18px;
 	border:0
 }
+
+@media screen and (max-width: 420px) {
+	.Topbar_bigbutton {
+		margin-right: 5px;
+		margin-left: 15px;
+		padding: 8px 10px;
+	}
+}
+
 
 .Topbar_bigbutton:focus,.Topbar_bigbutton:hover{
 	border:0;

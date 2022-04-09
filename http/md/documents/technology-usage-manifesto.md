@@ -3,10 +3,8 @@ title: "Technology Usage Manifesto"
 ---
 
 This document lays out a set of rules that I will follow in order to protect
-myself from the pitfalls of modern technology.
-
-_The canonical version of this is the latest git commit
-[here](https://git.sr.ht/tim-clifford/technology-usage-manifesto)_
+myself from the pitfalls of modern technology. Note that if any rules conflict,
+specific takes precedence over general.
 
 ## 0: Aims
 
@@ -23,10 +21,25 @@ Assumptions:
 
 Limitations:
 
-* Hardware definitely can't be trusted
+* In reality hardware definitely can't be trusted (yet I have no choice but to trust it)
 * Containerisation/hypervisors probably can't be trusted
 * FOSS can still contain spyware, even though it is less common. Perhaps even
   FOSS software should be containerised.
+
+Data Classification:
+
+Secure: to my knowledge, there is no way another party can gain access to this
+data. (Of course, that doesn't mean it's impossible, it almost certainly isn't)
+
+Obscure: There are ways that this data could be accessed, but it is not likely
+that it can be mined, due to some combination of obscurity, anonymisation, low
+signal-to-noise ratio, low volume, and/or other technical constraints. Note
+that modern neural networks have _incredible_ correlation power, and you should
+not be surprised if this data eventually becomes public. Different sources of
+obscure data should ideally be segregated such that correlations cannot easily
+be made between them.
+
+Public: The data is easily accessible by any party.
 
 ### 0.2: Have sovereignty over software I depend on
 
@@ -69,7 +82,7 @@ these conditions.
 1.0) I will not consume media over a network through a means where different
 usages can be correlated with each other. (Aim 3)
 
-1.0) (comment) So I can't authenticate, I can't be personably identifiable, and
+1.0) (comment) So I can't authenticate, I can't be personally identifiable, and
 I must prevent fingerprinting (i.e. (1.2))
 
 1.1) I will not access a remote server that requires authentication, unless I
@@ -81,17 +94,20 @@ the data is both mirrored to a local drive/NAS and either public or protected
 with end-to-end encryption. File metadata must be hidden as well as file
 contents.
 
-1.2) Unless (1.1) applies, I will only access remote servers through Tor or
-similar, to prevent fingerprinting. (Aim 1)
+1.2) If (1.1) applies but none of the data transferred can be linked to my
+identity, the data shall be considered "obscure" rather than public.
 
-1.2) (comment) Further anti-fingerprinting measures should also be taken when
+1.3) Unless all transferred data is public, I will only access remote servers
+through Tor or similar, to prevent fingerprinting. (Aim 1)
+
+1.3) (comment) Further anti-fingerprinting measures should also be taken when
 possible, e.g. modifying user agent strings to the most common option. (Aim 1)
 
-1.3) I will not grant a remote server access to any sensing peripherals (e.g.
+1.4) I will not grant a remote server access to any sensing peripherals (e.g.
 microphone or camera), unless it is verifiably protected by client-side
 end-to-end encryption. (Aims 1 and 3)
 
-1.4) If free (libre) or trivial code is downloaded from a remote server and
+1.5) If free (libre) or trivial code is downloaded from a remote server and
 then immediately executed (e.g. JavaScript), only *the source itself* should be
 whitelisted, not the remote server, to prevent a bait-and-switch scenario.
 (Aims 1 and 2)
@@ -137,14 +153,15 @@ compromised and malicious. (Aim 1)
 4.0) I will not be pressured into using software without first taking the time
 to consider this manifesto.
 
-4.1) If I am pressured to contravene this manifesto against my will, I will
-seek solutions that contravene the aims in descending order. If Aim 1 must be
-contravened, it should be done in a way that compromises the smallest amount of
-the least sensitive data possible.
+4.1) If I am pressured to contravene this manifesto against my will, and I
+cannot resist, I will seek solutions that contravene the aims in descending
+order. If Aim 1 must be contravened, it should be done in a way that
+compromises the smallest amount of the least sensitive data possible.
 
-4.2) When transferring data to a person who does not comply with this
-manifesto or a similar one, I will assume it is public and compromised. (Aims 1
-and 4)
+4.2) When transferring data to a person who does not comply with this manifesto
+or a similar one, but nonetheless through a method which, on my end, does not
+contravene this manifesto, I will assume the data becomes "obscure" (unless it
+is already public). (Aims 1 and 4)
 
 4.3) I will not use a proprietary messaging service, unless it can be
 adequately bridged to a FOSS client. (Aims 1 and 2)
@@ -160,8 +177,9 @@ metadata (e.g. Matrix), but this is not a requirement.
 
 ## 5: Other computers
 
-5.0) I may use computers I do not trust, but I must assume anything I do on the
-system is public knowledge. (Aim 1)
+5.0) I may use computers I do not trust, but I must assume any data relating to
+my usage of the system is public - unless my identity can be concealed, in
+which case the data will be considered "obscure". (Aim 1)
 
 ## 6: Workplace software
 
@@ -182,10 +200,10 @@ similar goals to their internal practices.
 | Audio Consumption (Spotify)  | Torrents? CD ripping? mp3 purchasing?        |
 | YouTube                      | Selfhosted Invidious or CloudTube            |
 | Traditional TV/movies        | Torrents? Blu-ray ripping?                   |
-| Cloud Storage (backup)       | Borg + Backblaze and local storage           |
+| ✅ Cloud Storage (backup)    | Borg + Backblaze and local storage           |
 | Cloud Storage (continuous)   | VPS/equivalent + E2E encryption + SFTP       |
 | Gaming                       | Public metadata + containerised Steam? Hmm.  |
 | MessageEase keyboard         | Build my own                                 |
 | DnD beyond                   | Find alternative? Build my own? Use paper?   |
-| Google Photos                | Just use SFTP-backed folders lol             |
+| ✅ Google Photos             | Just use SFTP-backed folders lol             |
 | Social media                 | Just don't use? Fediverse stuff? Probably empty account and use FOSS frontend selfhosted with authentication of my account (is this possible? probably...) |

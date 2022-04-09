@@ -24,7 +24,7 @@ won't do, and will help me maintain privacy, ensure sovereignty over software I
 depend on, reject mass data gathering, and make a statement about the
 importance of FOSS.
 
-[The manifesto can be found here](https://git.sr.ht/~tim-clifford/technology-usage-manifesto)
+[The manifesto can be found here](https://tim.clifford.lol/documents/technology-usage-manifesto.html)
 
 [Or on Gemini here](gemini://tim.clifford.lol/technology-usage-manifesto.gmi)
 

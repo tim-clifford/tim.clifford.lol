@@ -26,7 +26,7 @@ blog_sort_color() {
 $(echo "$color_current" | cut -d' ' -f 1)	$(echo "$sorted_posts" | head -n1)
 $sorted_colored_posts"
 		sorted_posts="$(echo "$sorted_posts" | tail -n +2)"
-		color_current="$(echo "$color_current" | cut -d' ' -f 2-)"
+		color_current="$(echo "$color_current" | cut -d' ' -sf 2-)"
 	done
 
 	echo "$sorted_colored_posts"
