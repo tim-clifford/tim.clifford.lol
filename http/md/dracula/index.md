@@ -131,5 +131,5 @@ for title, short in stuff[len(stuff)//2:]:
 </div>
 
 <p><center>
-Check out [https://draculatheme.com](https://https://draculatheme.com) for more themes
+Check out [https://draculatheme.com](https://draculatheme.com) for more themes
 </p>

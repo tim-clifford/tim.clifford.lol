@@ -21,7 +21,7 @@ quicker!](https://tim.clifford.lol/tim_clifford.asc).
 
 ### SRCF
 
-I'm the Chair of the Student Run Computing Facility, a a volunteer-run student
+I'm the Chair of the Student Run Computing Facility, a volunteer-run student
 society that provides free, useful and flexible computing and network services
 for University of Cambridge staff and students. See more
 [here](https://www.srcf.net)
