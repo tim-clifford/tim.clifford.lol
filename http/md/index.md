@@ -2,8 +2,8 @@
 title: "Tim Clifford"
 ---
 
-I'm an engineering student, space enthusiast, cypherpunk (in the pure sense,
-not the cryptocurrency sense), and free (libre) / open source advocate.
+I'm an engineering student, space enthusiast, cypherpunk, and free (libre) /
+open source advocate.
 
 [Read my Technology Usage Manifesto](/documents/technology-usage-manifesto.html)
 

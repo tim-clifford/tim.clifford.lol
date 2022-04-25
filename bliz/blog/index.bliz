@@ -2,7 +2,7 @@
 gem_header 20 'text/gemini'
 set b_current_time (date +%c)
 set b_words (bliz_word_count)
-# vi: ft=gemtext
+# vi: ft=gemini
 %%%
 
 # Tim's blog
@@ -20,6 +20,7 @@ find . -mindepth 1 -maxdepth 1 ! -name 'index.*' | while read post; do
 		index=$post/index.*
 		post=${post}/
 	fi
+	post="$(echo "$post" | sed 's|^\./||')"
 	if ! echo $index | egrep -q '\.(gmi|bliz)$'; then
 		continue
 	fi
@@ -27,7 +28,7 @@ find . -mindepth 1 -maxdepth 1 ! -name 'index.*' | while read post; do
 	date="$(sed -n \
 		's/.*\([[:digit:]]\{4\}-[[:digit:]]\{2\}-[[:digit:]]\{2\}\).*/\1/p' \
 		$index | head -n1)"
-	echo "=> ./$post $date - $title"
+	echo "=> /blog/$post $date - $title"
 done | sort -rk 3,3 # could fail if there is a space in $post ig but who cares
 cd - >/dev/null
 %%%
