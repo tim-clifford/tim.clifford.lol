@@ -14,7 +14,7 @@ gemini:
 https:
 	rm out/http/* -rf
 	./scripts/build.sh --http && \
-	rsync -a --delete out/http/ pip:public_html
+	rsync -a --delete out/http/ pip:/public/home/tc565/public_html
 build:
 	./scripts/build.sh --all
 deploy:

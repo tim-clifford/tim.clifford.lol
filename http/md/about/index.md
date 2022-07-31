@@ -32,32 +32,14 @@ I'm also the Head of DevOps for Cambridge University Spaceflight, a student
 society aiming to reach the Karman Line by 2023. See more
 [here](https://www.cusf.co.uk)
 
-## Opinions 'n stuff
+## Me in other places
 
-I've also got down some opinions on Gemini [here](gemini://tim.clifford.lol/opinions.gmi) :)
+Check out my Gemini site! If you don't know what Gemini is, it's a "smolnet"
+alternative to the http/html ecosystem - leaner, meaner, and more wholesome.
+You'll need a special browser to view it, then find me at
+gemini://tim.clifford.lol/ :)
 
-### Good workflow is worth the development time
-
-We spend so much of our lives sitting in front of computers that it's really
-worth taking the extra time to make it as efficient and comfortable as
-possible. Here are some projects that help me do that.
-
-*See also [Dracula](https://tim.clifford.lol/dracula)*
-
-<div>
-  <a class="nounderline" href="https://github.com/tim-clifford/.config">
-    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=tim-clifford&amp;repo=.config&amp;theme=dracula&amp;hide_border=true"/>
-  </a>
-  <a class="nounderline" href="https://github.com/tim-clifford/nvimrc">
-    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=tim-clifford&amp;repo=nvimrc&amp;theme=dracula&amp;hide_border=true"/>
-  </a>
-  <a class="nounderline" href="https://github.com/smh-my-head/charon">
-    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=smh-my-head&amp;repo=charon&amp;theme=dracula&amp;hide_border=true"/>
-  </a>
-  <a class="nounderline" href="https://github.com/smh-my-head/hades">
-    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=smh-my-head&amp;repo=hades&amp;theme=dracula&amp;hide_border=true"/>
-  </a>
-  <a class="nounderline" href="https://github.com/tim-clifford/ErgoDash-R">
-    <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=tim-clifford&amp;repo=ErgoDash-R&amp;theme=dracula&amp;hide_border=true"/>
-  </a>
-</div>
+You can also find me on SourceHut [here](https://git.sr.ht/~tim-clifford), where my
+active projects are hosted, or on GitHub
+[here](https://github.com/tim-clifford), which hosts some forks of projects
+I've contributed to.
