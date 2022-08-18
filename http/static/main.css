@@ -846,12 +846,12 @@ th, td {
 
 .green .blog-item-title,
 .green h1 {
-  color: rgba(80, 250, 123, 1) !important;
+  color: rgba(80, 250, 123, 1) /* no !important because it's on the blog index */
 }
 
 .cyan .blog-item-title,
 .cyan h1 {
-  color: rgba(139, 233, 253, 1); /* no !important because it's on the blog index */
+  color: rgba(139, 233, 253, 1) !important;
 }
 
 .purple .blog-item-title,
@@ -929,13 +929,13 @@ th, td {
   margin-bottom: 5px;
 }
 
-.blog blockquote {
+blockquote {
   padding: 20px;
   margin-bottom: 12px;
   border-left: 3px solid #44475a;
 }
 
-.blog blockquote p {
+blockquote p {
   display: inline;
 }
 

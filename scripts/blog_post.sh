@@ -26,7 +26,7 @@ elif ! test -f $f_eml; then
 fi
 
 cd $dir
-make
+make all
 cd - >/dev/null
 
 echo "Built and deployed for gemini and http"
@@ -34,5 +34,7 @@ echo "Built and deployed for gemini and http"
 <$f_eml msmtp -a blog -- tim@clifford.lol
 
 echo "Sent test email. Press enter to send main or ctrl-c to cancel"
+
+read foo
 
 <$f_eml msmtp -t -a blog

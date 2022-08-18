@@ -1,0 +1,32 @@
+---
+title: "What we leave behind"
+excerpt: "One day, we will all die. What can we hope for as consolation?"
+createdAt: "2022-08-18"
+---
+
+One day, we will all die. What can we hope for as consolation? Where is our
+meaning in the face of our inevitable doom? Our lives are fleeting, and, in a
+way, that makes them ever more beautiful. But our finiteness is heart-wrenching
+too.
+
+I hope that some piece of me, of my soul, can live on. Whether it's in a
+mediocre blog post, a dusty and almost forgotten book, or an obscure scientific
+paper, I want some future person to read what I've written and be hit by the
+realization that a real person was behind it. A real, human, person poured
+their soul into those words, a person with hopes and dreams and regrets and
+flaws, who experienced not just love and happiness, but pain, and jealousy, and
+bitterness too.
+
+That's what this blog is really about, I suppose. What it's always been about.
+It's me reaching out into the void, and saying: "I was here. I existed." I
+don't want what I make to be perfect. I want it to be a reflection of the real
+me. Not some polished version of me that never really existed. Just me.
+
+So, if you're that future person, digging through the archives of ancient
+times: Hi! What's the world like? Have my fears come to life, or was I being
+silly? You have no idea how much I want to just sit down with you, grab some
+coffee, and chat.
+
+Is coffee still around?
+
+<!-- vi: set sts=2 sw=2 et :-->

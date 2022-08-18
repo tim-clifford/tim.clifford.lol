@@ -2,7 +2,7 @@
 title: "Tim Clifford"
 ---
 
-I'm an engineering student, space enthusiast, cypherpunk, and free (libre) /
+I'm an engineering student, amateur musician, cypherpunk, and free (libre) /
 open source advocate.
 
 [Read my Technology Usage Manifesto](/documents/technology-usage-manifesto.html)
@@ -17,7 +17,6 @@ open source advocate.
 </div>
 
 ## Projects you might like to use
-
 
 <div>
   <a class="nounderline" href="https://sr.ht/~tim-clifford/vim-venus">
@@ -34,13 +33,20 @@ open source advocate.
   </a>
 </div>
 
+## Dracula Themes
+
+Dracula is unequivocally the best theme. Dark themes are a no brainer -
+I like my eyeballs intact, thank you very much. And Dracula's
+colorscheme is simply gorgeous. With that in mind, I've contributed
+several implementations of the theme...
+
+[Go to the theme gallery](/dracula/)
+
 ## Workflow Projects
 
 We spend so much of our lives sitting in front of computers that it's really
 worth taking the extra time to make it as efficient and comfortable as
 possible. Here are some projects that help me do that.
-
-_see also: [Dracula](/dracula)_
 
 <div>
   <a class="nounderline" href="https://github.com/tim-clifford/.config">
@@ -59,7 +65,6 @@ _see also: [Dracula](/dracula)_
     <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=tim-clifford&amp;repo=ErgoDash-R&amp;theme=dracula&amp;hide_border=true"/>
   </a>
 </div>
-
 
 ## Other Projects
 

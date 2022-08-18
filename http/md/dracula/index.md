@@ -1,11 +1,6 @@
 ---
-title: "Dracula Themes"
+title: "Dracula Theme Gallery"
 ---
-
-Dracula is unequivocally the best theme. Dark themes are a no brainer -
-I like my eyeballs intact, thank you very much. And Dracula's
-colorscheme is simply gorgeous. With that in mind, I've contributed
-several implementations of the theme...
 
 <div class="noborder">
 <table>

@@ -9,11 +9,12 @@
 
 => /ascii-art/guitar-noansi.txt ASCII art above but without ANSI color codes
 
-I'm an engineering student, space enthusiast, free (libre) nutter, and cypherpunk.
+I'm an engineering student, amateur musician, free (libre) nutter, and cypherpunk.
 
 ## Main links
 
 => /blog/ Blog
+=> /music/ Music
 => /technology-usage-manifesto.gmi Technology Usage Manifesto
 => /documents/cypherpunks-manifesto.gmi A Cypherpunk's Manifesto
 => /projects.bliz Projects
@@ -29,7 +30,6 @@ I'm an engineering student, space enthusiast, free (libre) nutter, and cypherpun
 
 => /opinions.gmi Random opinions
 => /contact.gmi Contact
-=> /twtxt.txt twtxt
 => https://git.sr.ht/~tim-clifford/tim.clifford.lol Source code
 
 The content for this site is CC-BY-SA. The source code is AGPLv3.
