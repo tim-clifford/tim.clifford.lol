@@ -15,7 +15,7 @@ _"Never Knew" by Ludovique_
 
 <iframe
   title="Cover | &quot;Never Knew&quot; by Ludovique"
-  src="https://peertube.co.uk/videos/embed/bWBkqQNVks7Sm2YgxmgNgz"
+  src="https://dalek.zone/videos/embed/7ab62c76-df1a-4eff-8535-b6260514adb0"
   allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"
   frameborder="0" style="min-width: 100%; max-width: 100%; aspect-ratio: 16/9"></iframe>
 
