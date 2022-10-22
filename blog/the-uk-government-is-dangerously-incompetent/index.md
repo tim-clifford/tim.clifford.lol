@@ -4,6 +4,17 @@ excerpt: "(in regards to the \"No place to hide\" propaganda campaign)"
 createdAt: "2022-02-04"
 ---
 
+## Preface, 2022-10-22
+
+In retrospect, this blog post is perhaps a little too inflammatory, though not
+incorrect as far as I know. Such were my feelings at the time. I won't censor
+myself by editing or removing it (see also ["What we leave
+behind"](/blog/what-we-leave-behind)), but be warned. If you'd like to see a
+more carefully considered article around this topic, see Ross Anderson's paper
+["Chat Control or Child Protection?"](https://arxiv.org/abs/2210.08958)
+
+## Original post
+
 Recently the UK government launched the ["No place to
 hide"](https://www.noplacetohide.org.uk) propaganda campaign, which seeks to
 maintain their unfettered access to Facebook Messenger data by preventing the

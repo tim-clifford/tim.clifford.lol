@@ -1,0 +1,7 @@
+<item>
+	<title>${TITLE}</title>
+	<link>${URL}</link>
+	<guid>${URL}</guid>
+	<description>${DESCRIPTION}</description>
+	<pubDate>${DATE}</pubDate>
+</item>

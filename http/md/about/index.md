@@ -29,7 +29,7 @@ for University of Cambridge staff and students. See more
 ### CUSF
 
 I'm also the Head of DevOps for Cambridge University Spaceflight, a student
-society aiming to reach the Karman Line by 2023. See more
+society aiming to reach the Karman Line by <strike>2023</strike> 2024. See more
 [here](https://www.cusf.co.uk)
 
 ## Me in other places

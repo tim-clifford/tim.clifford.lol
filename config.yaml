@@ -19,6 +19,7 @@ page_colors:
   _dracula: pink
   _music: cyan
   _blog: green
+  _projects: orange
   _why_pgp: yellow
   _documents_cypherpunks_manifesto_md: purple
   _documents_technology_usage_manifesto_md: orange

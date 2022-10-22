@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tim Clifford's blog</title>
+		<link>https://tim.clifford.lol/blog/</link>
+		<description>Stream of random thoughts and ideas I guess</description>
+		<lastBuildDate>${DATE}</lastBuildDate>
+		<atom:link href="https://tim.clifford.lol/blog/rss.xml" rel="self" type="application/rss+xml" />
+${CONTENT}
+	</channel>
+</rss>
+
