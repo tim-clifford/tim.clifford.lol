@@ -5,6 +5,7 @@ colors:
   green: "#50fa7b"
   yellow: "#f1fa8c"
   orange: "#ffb86c"
+  red: "#ff5555"
 
 color_cycle:
   cyan
@@ -19,7 +20,8 @@ page_colors:
   _dracula: pink
   _music: cyan
   _blog: green
-  _projects: orange
+  _projects: yellow
   _why_pgp: yellow
   _documents_cypherpunks_manifesto_md: purple
-  _documents_technology_usage_manifesto_md: orange
+  _documents_technology_usage_manifesto_md: red
+  _documents_chat_systems_md: pink

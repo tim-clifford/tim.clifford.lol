@@ -1,5 +1,5 @@
 ---
-title: "Tim Clifford's projects"
+title: "Tim's projects"
 ---
 
 ## Software you might like to use

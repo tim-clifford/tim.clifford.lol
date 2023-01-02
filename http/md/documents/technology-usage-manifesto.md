@@ -195,15 +195,15 @@ similar goals to their internal practices.
 
 ## Addendum: current changes that need to be made
 
-| Software                     | Replacement                                  |
-|------------------------------|----------------------------------------------|
-| Audio Consumption (Spotify)  | Torrents? CD ripping? mp3 purchasing?        |
-| YouTube                      | Selfhosted Invidious or CloudTube            |
-| Traditional TV/movies        | Torrents? Blu-ray ripping?                   |
-| ✅ Cloud Storage (backup)    | Borg + Backblaze and local storage           |
-| Cloud Storage (continuous)   | VPS/equivalent + E2E encryption + SFTP       |
-| Gaming                       | Public metadata + containerised Steam? Hmm.  |
-| MessageEase keyboard         | Build my own                                 |
-| DnD beyond                   | Find alternative? Build my own? Use paper?   |
-| ✅ Google Photos             | Just use SFTP-backed folders lol             |
-| Social media                 | Just don't use? Fediverse stuff? Probably empty account and use FOSS frontend selfhosted with authentication of my account (is this possible? probably...) |
+| Software                        | Replacement                                  |
+|---------------------------------|----------------------------------------------|
+| ✅ Audio Consumption (Spotify)  | Torrents? CD ripping? mp3 purchasing?        |
+| ✅ YouTube                      | ~~Selfhosted~~ Invidious or CloudTube        |
+| Traditional TV/movies           | Torrents? Blu-ray ripping?                   |
+| ✅ Cloud Storage (backup)       | Borg + Backblaze and local storage           |
+| ✅ Cloud Storage (continuous)   | VPS/equivalent + E2E encryption + SFTP       |
+| Gaming                          | Public metadata + containerised Steam? Hmm.  |
+| ✅ MessageEase keyboard         | ~~Build my own~~ use qwerty and be sad       |
+| DnD beyond                      | Find alternative? Build my own? Use paper?   |
+| ✅ Google Photos                | Just use SFTP-backed folders lol             |
+| Social media                    | Just don't use? Fediverse stuff? Probably empty account and use FOSS frontend selfhosted with authentication of my account (is this possible? probably...) |

@@ -1,0 +1,136 @@
+From: blog@clifford.lol
+To: tc565-blog@srcf.net
+Subject: Blog | Taking back control (part 3): the PinePhone Pro
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary=proprietarysoftwareismalware
+
+--proprietarysoftwareismalware
+Content-Type: text/html; charset=utf-8
+
+<p>
+  <a href="https://tim.clifford.lol/blog/taking-back-control-3">View in a browser</a>
+</p>
+<p>
+  <a href="gemini://tim.clifford.lol/blog/taking-back-control-3">Or on Gemini</a>
+</p>
+
+<p>PS: this blog is now also accessible over RSS <a
+href="https://tim.clifford.lol/blog/rss.xml">here</a>.</p>
+<p>From my manifesto:</p>
+<blockquote>
+<p>2.0) I will not depend on any proprietary software.</p>
+</blockquote>
+<blockquote>
+<p>2.1) Proprietary software must be run in an [untrusted sandbox].</p>
+</blockquote>
+<p>Clearly, continuing to use a proprietary Samsung device with a
+proprietary software additions to Android (as well as some unremovable
+proprietary apps) is unacceptable. I could have perhaps installed
+LineageOS (a fully FOSS build of Android) on my old phone, but I figured
+I’d go the whole mile and buy a PinePhone Pro, which is FOSS all the way
+down to the PCB design (some of the chips e.g. the GSM module are
+proprietary, sadly, though they are sandboxed). Naturally I’ve got it
+running Arch Linux, for the memes but also because it works really well
+lol.</p>
+<h2 id="introducing-flumph">Introducing “flumph”</h2>
+<p>Having silly naming schemes for things is fun, so I’ve decided to
+call my new PinePhone Pro “flumph”, after the creature from Dungeons and
+Dragons. Canonically, flumphs are very intelligent creatures, and are
+immune to telepathy, just like how this flumph is (hopefully) resistant
+to surveillance :D</p>
+<p>(Fitting with the DnD creature theme, I’ve now named my outgoing
+Samsung “Mind Flayer”, since it has been trying to enslave my
+brain.)</p>
+<h2 id="ricing-of-course">Ricing (of course)</h2>
+<p>Naturally, on buying any new device, one must spend least 15 hours
+“ricing” it (aka making it look good without improving usability). I
+focused my ricing on the bootloader, since it’s the perfect place to put
+flumph-themed artwork etc etc. Here are some pictures of the final
+result:</p>
+<table class="noborder" style="border: none">
+<tr>
+<td style="width: 50%">
+<a href="https://tim.clifford.lol/blog/taking-back-control-3/flumph-anim.mp4">
+  Flumph's boot animation (video)
+</a>
+</td>
+<td style="width: 50%">
+<img style="width:100%" src="https://tim.clifford.lol/blog/taking-back-control-3/flumph-unlock.png"
+          alt="flumph's full disk encryption unlock screen">
+</td>
+<tr>
+<td style="width: 50%">
+<img style="width:100%" src="https://tim.clifford.lol/blog/taking-back-control-3/flumph-incorrect.png"
+             alt="flumph after a failed password">
+</td>
+<td style="width: 50%">
+<img style="width:100%" src="https://tim.clifford.lol/blog/taking-back-control-3/flumph-unlocking.png"
+            alt="flumph during encryption unlock">
+</td>
+</tr>
+</table>
+<p><br> I haven’t yet riced sxmo, the desktop environment I’m using, but
+it’s basically sway, which is basically i3, which I’ve riced a ton on on
+my desktop, so it shouldn’t be too much work…</p>
+<h2 id="mobile-data-restrictions">Mobile data restrictions</h2>
+<p>Since, while I’m out and about, I plan to use flumph pretty much only
+for instant messaging, I bought a super cheap SIM card with very little
+data (750MB/mo), and I’ve tweaked both my matrix client and the network
+traffic rules in Arch so that I can’t accidentally use it all up at
+once. I was going to give a boring technical description of how I did
+that, but I reckon nobody cares lol, so I wont (:</p>
+<h2 id="is-it-actually-usable">Is it actually usable?</h2>
+<p>So I’ll admit it took me a while to get everything set up, and there
+are are still a few niggling annoyances, e.g., I can’t get messages over
+matrix while the screen is locked because the network devices get turned
+off when it goes to sleep &gt;:, but overall yes, it’s very usable, and
+I barely ever have to go back to Mind Flayer! So that’s put me one step
+closer to fully following my manifesto…</p>
+
+--proprietarysoftwareismalware
+Content-Type: text/plain; charset=utf-8
+
+View in a browser: https://tim.clifford.lol/blog/taking-back-control-3
+Or on Gemini: gemini://tim.clifford.lol/blog/taking-back-control-3
+
+PS: this blog is now also accessible over RSS here: https://tim.clifford.lol/blog/rss.xml
+
+From my manifesto:
+
+> 2.0) I will not depend on any proprietary software.
+
+> 2.1) Proprietary software must be run in an [untrusted sandbox].
+
+Clearly, continuing to use a proprietary Samsung device with a proprietary software additions to Android (as well as some unremovable proprietary apps) is unacceptable. I could have perhaps installed LineageOS (a fully FOSS build of Android) on my old phone, but I figured I'd go the whole mile and buy a PinePhone Pro, which is FOSS all the way down to the PCB design (some of the chips e.g. the GSM module are proprietary, sadly, though they are sandboxed). Naturally I've got it running Arch Linux, for the memes but also because it works really well lol.
+
+## Introducing "flumph"
+
+Having silly naming schemes for things is fun, so I've decided to call my new PinePhone Pro "flumph", after the creature from Dungeons and Dragons. Canonically, flumphs are very intelligent creatures, and are immune to telepathy, just like how this flumph is (hopefully) resistant to surveillance :D
+
+(Fitting with the DnD creature theme, I've now named my outgoing Samsung "Mind Flayer", since it has been trying to enslave my brain.)
+
+## Ricing (of course)
+
+Naturally, on buying any new device, one must spend least 15 hours "ricing" it (aka making it look good without improving usability). I focused my ricing on the bootloader, since it's the perfect place to put flumph-themed artwork etc etc. Here are some pictures of the final result:
+
+flumph's boot animation: https://tim.clifford.lol/blog/taking-back-control-3/flumph-anim.mp4
+flumph's full disk encryption unlock screen: https://tim.clifford.lol/blog/taking-back-control-3/flumph-unlock.png
+flumph after a failed password: https://tim.clifford.lol/blog/taking-back-control-3/flumph-incorrect.png
+flumph during encryption unlock: https://tim.clifford.lol/blog/taking-back-control-3/flumph-unlocking.png
+
+I haven't yet riced sxmo, the desktop environment I'm using, but it's basically sway, which is basically i3, which I've riced a ton on on my desktop, so it shouldn't be too much work...
+
+## Mobile data restrictions
+
+Since, while I'm out and about, I plan to use flumph pretty much only for instant messaging, I bought a super cheap SIM card with very little data (750MB/mo), and I've tweaked both my matrix client and the network traffic rules in Arch so that I can't accidentally use it all up at once. I was going to give a boring technical description of how I did that, but I reckon nobody cares lol, so I wont (:
+
+## Is it actually usable?
+
+So I'll admit it took me a while to get everything set up, and there are are still a few niggling annoyances, e.g., I can't get messages over matrix while the screen is locked because the network devices get turned off when it goes to sleep >:, but overall yes, it's very usable, and I barely ever have to go back to Mind Flayer! So that's put me one step closer to fully following my manifesto...
+
+---
+
+You are recieving this email because you opted in via tim.clifford.lol. To unsubscribe, email tc565-blog-request@srcf.net with subject line "unsubscribe"
+
+--proprietarysoftwareismalware--
+

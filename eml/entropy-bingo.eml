@@ -1,0 +1,302 @@
+From: blog@clifford.lol
+To: tc565-blog@srcf.net
+Subject: Blog | Entropy Bingo
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary=proprietarysoftwareismalware
+
+--proprietarysoftwareismalware
+Content-Type: text/html; charset=utf-8
+
+<p>
+  <a href="https://tim.clifford.lol/blog/entropy-bingo">View in a browser</a>
+</p>
+<p>
+  <a href="gemini://tim.clifford.lol/blog/entropy-bingo">Or on Gemini</a>
+</p>
+
+<p>Let me introduce you to a little game I like to call Entropy
+Bingo.</p>
+<p>Choose an action that you might take with expectations of anonymity,
+and try to figure out whether a determined attacker can figure out who
+you are, by counting up the bits of Shannon entropy they can determine.
+If it reaches 33 bits (corresponding to the &gt;8 billion people on the
+planet), you lose, and you have been deanonymised. If not, you win. For
+simplicity, we assume each piece of information is uncorrelated with the
+others. This isn’t really true, but it’s napkin maths anyway.</p>
+<p><em>Disclaimer 1: I should point out that I do not claim to be an
+expert on anonymisation and deanonymisation, though it is a fascination
+of mine. Make your own decisions, and consider my suggestions carefully.
+Maybe one day I will be an expert, if that happens I’ll remove this
+disclaimer :)</em></p>
+<h2 id="example-1-convenience-store">Example 1: convenience store</h2>
+<p>Here’s an example: I go to my local convenience store and buy an
+item. I don’t take my phone or any other tracking device, and I pay in
+cash. Am I anonymous?</p>
+<p>Firstly, my adversary can narrow it down to the number of people who
+might buy food at this particular store. Some very approximate maths
+suggests that this already knocks off about 20 bits of entropy, but it
+would be more if my store were very small. Fun.</p>
+<p>I’m the type of person to pay in cash, which knocks off at least
+another 3 bits, based on statistics about people’s payment preferences.
+If my adversary has ever deanonymised me before, they will likely know I
+pay in cash.</p>
+<p>Most convenience stores have CCTV, so lets say my adversary can see
+my face and what I’m buying. If I lived in China or New York<a
+href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a> or any other place that uses facial
+recognition without consent, I would already have lost. But let’s
+continue anyway.</p>
+<p>So, how many bits does my physical appearance count for? The gender I
+present knocks off about 1 bit. I wear glasses, which knocks off about
+another bit. My hair type knocks off about 3 bits. My approximate age
+knocks off about 3 more bits.</p>
+<p>That’s already 31/33 bits and I definitely haven’t thought of
+everything. That’s seriously bad. Someone who reasonably might have all
+that information can immediately narrow me down to one of 4 people.</p>
+<p>Who would have all that information? Well, let’s say the convenience
+store is storing all this video data in “the cloud”, which probably
+means one of Google’s servers. And all of that information about my
+characteristics and location? Google has that too. So, yes, even if I
+don’t take a phone and even if I pay in cash, Google could deanonymise
+me. Would they? I don’t know. But they certainly have incentive to.</p>
+<h2 id="example-2-a-clandestine-deal">Example 2: a clandestine deal</h2>
+<p>Ok, so you’re super paranoid and you think you’re smart. You go onto
+the anonymous web (a Tor onion site), and find someone who lives in your
+city of 100,000 people who has the thing you want. You make sure they
+use Matrix, because you know it’s reasonably secure and private, and you
+make a new Matrix handle to talk to them. You meet them in person in a
+random place in the city to make the exchange, pay in cash, and wear
+clothes you never usually wear - plus a cap and balaclava.</p>
+<p><em>Busted!</em> You’ve still given away too much information.
+What!!!??? Here’s the breakdown:</p>
+<ul>
+<li>Approximate location: 16 bits</li>
+<li>Use of Tor: at least 6 bits</li>
+<li>Use of Matrix: 7 bits</li>
+<li>Height: 2 bits</li>
+<li>Approximate gender and age: 3 bits</li>
+</ul>
+<p><strong>Total: 34 bits</strong></p>
+<p>You made a few mistakes. The biggest was using Matrix.
+<em>What??</em> you cry? But Matrix is secure! It’s private! It’s FOSS
+and it has end-to-end encryption!!</p>
+<p>Yes. But privacy is not anonymity. Security is not anonymity. For
+anonymity, you need security and plausible deniability. For any given
+action, there must be a large number of people who could be responsible
+for it. You could have a perfectly private and secure system, but if
+there are only two users, every action must have been made by one of
+those two users. Tor and Matrix are only successful anonymising tools
+when used extremely carefully.</p>
+<p>Still, this example requires much more nuance. Who, specifically,
+could deanonymise you? The person you’ve made a cash deal with might be
+able to, but maybe not. The assumptions of this game are critical, and
+hard to evaluate in the real world. Does your use of Tor actually reveal
+6 bits? Your adversary won’t have a list of everyone who uses Tor, but
+if you’re someone who cares this much about anonymity, you might have
+publicly declared that Tor is a great tool and people should use it, in
+which case there might be a list you’re on. The same goes for Matrix,
+although an accurate list of users is probably a lot easier to come by.
+Your adversary might not have an accurate list of people in your city
+and their age/height/gender either, but a little digging on social media
+would go a long way. (The possibility of your adversary being a law
+enforcement agent would go a lot further, if your transaction were
+illegal)</p>
+<h2 id="what-should-you-do">What should you do?</h2>
+<p>What would be a better strategy for a truly anonymous purchase? The
+first thing to do is to randomise as many choices as you can. When
+you’re looking for someone to transact with over Tor, find as many as
+you can, and choose randomly, with probabilities proportional to the
+number of customers you think they have. Don’t insist on a messaging
+system, use whatever they use, provided that you can use it entirely
+over Tor without giving up personal information (e.g., burner email
+addresses or Facebook accounts are fine if you can do it without
+identity verification). Make your search area as broad as possible,
+perhaps even take a train into another city and do the transaction there
+(try to avoid cameras as you do). Cover as many of your distinguishing
+features as you can, but do it in a boring way - don’t wear a balaclava,
+wear a mask, a beanie, and large sunglasses if it’s sunny.</p>
+<p>Additionally, you should try to segment the information such that no
+party has access to all of it. Don’t tell the person you transact with
+about your journey, the rain you came through, when you got off work, or
+anything else. In fact, it’s best if you don’t speak, your voice might
+be distinctive.</p>
+<p>Further, false information goes a long way. Put on a convincing wig.
+Wear fake glasses if you have perfect eyesight. Put pebbles in your
+shoes to change your gait. If you’re brave enough to speak, hint that
+you came from a different city than you really did. Each bit of false
+entropy can have serious anonymising power.<a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<h2 id="entropy-bingo-card">Entropy Bingo card</h2>
+<p>To conclude, here’s a bingo card with some sources of information I
+thought of that an attacker might use to remove your entropy. If you get
+a bingo, they’ve probably got you. It’s highly approximate, though I’ve
+been careful to keep incompatible or highly correlated sources of
+information from being in the same row/column/diagonal, as much as
+possible.</p>
+<table style="width:100%; border: 1px solid; border-collapse: collapse;">
+<colgroup>
+<col />
+<col />
+<col />
+<col />
+</colgroup>
+<tbody>
+<tr style="border: 1px solid; border-collapse: collapse;" class="odd">
+<td style="border: 1px solid; border-collapse: collapse;"><p>Travel by bike</p>
+<p>(~5 bits)</p></td>
+<td style="border: 1px solid; border-collapse: collapse;"><p>Nearest cell tower</p>
+<p>(~19 bits)</p></td>
+<td style="border: 1px solid; border-collapse: collapse;"><p>Use of Matrix</p>
+<p>(6 to 8 bits)</p></td>
+<td style="border: 1px solid; border-collapse: collapse;"><p>Travel by train</p>
+<p>(~6 bits)</p></td>
+</tr>
+<tr style="border: 1px solid; border-collapse: collapse;" class="even">
+<td style="border: 1px solid; border-collapse: collapse;"><p>IP address</p>
+<p>(20 to 30 bits)</p></td>
+<td style="border: 1px solid; border-collapse: collapse;"><p>Specific Job title</p>
+<p>(~10 bits?)</p></td>
+<td style="border: 1px solid; border-collapse: collapse;"><p>Age, gender, height</p>
+<p>(5 bits)</p></td>
+<td style="border: 1px solid; border-collapse: collapse;"><p>Use of Linux</p>
+<p>(5 to 7 bits)</p></td>
+</tr>
+<tr style="border: 1px solid; border-collapse: collapse;" class="odd">
+<td style="border: 1px solid; border-collapse: collapse;"><p>Paying in cash</p>
+<p>(~3 bits)</p></td>
+<td style="border: 1px solid; border-collapse: collapse;"><p>Knowledge of 1 person you know</p>
+<p>(20 bits)</p></td>
+<td style="border: 1px solid; border-collapse: collapse;"><p>Use of Tor</p>
+<p>(6 to 10 bits)</p></td>
+<td style="border: 1px solid; border-collapse: collapse;"><p>City you’re in</p>
+<p>(9 to 12 bits)</p></td>
+</tr>
+<tr style="border: 1px solid; border-collapse: collapse;" class="even">
+<td style="border: 1px solid; border-collapse: collapse;"><p>Not carrying a phone</p>
+<p>(3 to 5 bits)</p></td>
+<td style="border: 1px solid; border-collapse: collapse;"><p>Simple facial features</p>
+<p>(4 to 6 bits)</p></td>
+<td style="border: 1px solid; border-collapse: collapse;"><p>Town you’re in</p>
+<p>(16 to 20)</p></td>
+<td style="border: 1px solid; border-collapse: collapse;"><p>Uncommon hobby</p>
+<p>(8 to 10 bits)</p></td>
+</tr>
+</tbody>
+</table>
+<p>Ironically, many of the things on the bingo board, like Matrix, Tor,
+and Linux, are things which protect your privacy. But because not enough
+people use them, knowledge that you’re using them provides a fair bit of
+deanonymisation power. The solution: get more people to use them, to
+protect those that need anonymity.</p>
+<p><em>Disclaimer 2: I think I need to say that my fascination with
+anonymity doesn’t stem from a propensity to perform illegal acts.
+Though, I would probably say that even if it weren’t true. Regardless,
+I’ve gotta already be on some watchlists, right? Hello there NSA agent.
+Think about your life choices. Be more like Snowden.</em></p>
+<section class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p><a
+href="https://www.nytimes.com/2022/12/22/nyregion/madison-square-garden-facial-recognition.html">Horrifyingly,
+here’s one example</a><a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p><a
+href="https://terrytao.wordpress.com/about/anonymity-and-the-internet/">Terence
+Tao talks about this</a><a href="#fnref2" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+--proprietarysoftwareismalware
+Content-Type: text/plain; charset=utf-8
+
+View in a browser: https://tim.clifford.lol/blog/entropy-bingo
+Or on Gemini: gemini://tim.clifford.lol/blog/entropy-bingo
+
+Let me introduce you to a little game I like to call Entropy Bingo.
+
+Choose an action that you might take with expectations of anonymity, and try to figure out whether a determined attacker can figure out who you are, by counting up the bits of Shannon entropy they can determine. If it reaches 33 bits (corresponding to the >8 billion people on the planet), you lose, and you have been deanonymised. If not, you win. For simplicity, we assume each piece of information is uncorrelated with the others. This isn't really true, but it's napkin maths anyway.
+
+Disclaimer 1: I should point out that I do not claim to be an expert on anonymisation and deanonymisation, though it is a fascination of mine. Make your own decisions, and consider my suggestions carefully. Maybe one day I will be an expert, if that happens I'll remove this disclaimer :)
+
+## Example 1: convenience store
+
+Here's an example: I go to my local convenience store and buy an item. I don't take my phone or any other tracking device, and I pay in cash. Am I anonymous?
+
+Firstly, my adversary can narrow it down to the number of people who might buy food at this particular store. Some very approximate maths suggests that this already knocks off about 20 bits of entropy, but it would be more if my store were very small. Fun.
+
+I'm the type of person to pay in cash, which knocks off at least another 3 bits, based on statistics about people's payment preferences. If my adversary has ever deanonymised me before, they will likely know I pay in cash.
+
+Most convenience stores have CCTV, so lets say my adversary can see my face and what I'm buying. If I lived in China or New York[1] or any other place that uses facial recognition without consent, I would already have lost. But let's continue anyway.
+
+So, how many bits does my physical appearance count for? The gender I present knocks off about 1 bit. I wear glasses, which knocks off about another bit. My hair type knocks off about 3 bits. My approximate age knocks off about 3 more bits.
+
+That's already 31/33 bits and I definitely haven't thought of everything. That's seriously bad. Someone who reasonably might have all that information can immediately narrow me down to one of 4 people.
+
+Who would have all that information? Well, let's say the convenience store is storing all this video data in "the cloud", which probably means one of Google's servers. And all of that information about my characteristics and location? Google has that too. So, yes, even if I don't take a phone and even if I pay in cash, Google could deanonymise me. Would they? I don't know. But they certainly have incentive to.
+
+## Example 2: a clandestine deal
+
+Ok, so you're super paranoid and you think you're smart. You go onto the anonymous web (a Tor onion site), and find someone who lives in your city of 100,000 people who has the thing you want. You make sure they use Matrix, because you know it's reasonably secure and private, and you make a new Matrix handle to talk to them. You meet them in person in a random place in the city to make the exchange, pay in cash, and wear clothes you never usually wear - plus a cap and balaclava.
+
+Busted! You've still given away too much information. What!!!??? Here's the breakdown:
+
+* Approximate location: 16 bits
+* Use of Tor: at least 6 bits
+* Use of Matrix: 7 bits
+* Height: 2 bits
+* Approximate gender and age: 3 bits
+
+Total: 34 bits
+
+You made a few mistakes. The biggest was using Matrix. What?? you cry? But Matrix is secure! It's private! It's FOSS and it has end-to-end encryption!!
+
+Yes. But privacy is not anonymity. Security is not anonymity. For anonymity, you need security and plausible deniability. For any given action, there must be a large number of people who could be responsible for it. You could have a perfectly private and secure system, but if there are only two users, every action must have been made by one of those two users. Tor and Matrix are only successful anonymising tools when used extremely carefully.
+
+Still, this example requires much more nuance. Who, specifically, could deanonymise you? The person you've made a cash deal with might be able to, but maybe not. The assumptions of this game are critical, and hard to evaluate in the real world. Does your use of Tor actually reveal 6 bits? Your adversary won't have a list of everyone who uses Tor, but if you're someone who cares this much about anonymity, you might have publicly declared that Tor is a great tool and people should use it, in which case there might be a list you're on. The same goes for Matrix, although an accurate list of users is probably a lot easier to come by. Your adversary might not have an accurate list of people in your city and their age/height/gender either, but a little digging on social media would go a long way. (The possibility of your adversary being a law enforcement agent would go a lot further, if your transaction were illegal)
+
+## What should you do?
+
+What would be a better strategy for a truly anonymous purchase? The first thing to do is to randomise as many choices as you can. When you're looking for someone to transact with over Tor, find as many as you can, and choose randomly, with probabilities proportional to the number of customers you think they have. Don't insist on a messaging system, use whatever they use, provided that you can use it entirely over Tor without giving up personal information (e.g., burner email addresses or Facebook accounts are fine if you can do it without identity verification). Make your search area as broad as possible, perhaps even take a train into another city and do the transaction there (try to avoid cameras as you do). Cover as many of your distinguishing features as you can, but do it in a boring way - don't wear a balaclava, wear a mask, a beanie, and large sunglasses if it's sunny.
+
+Additionally, you should try to segment the information such that no party has access to all of it. Don't tell the person you transact with about your journey, the rain you came through, when you got off work, or anything else. In fact, it's best if you don't speak, your voice might be distinctive.
+
+Further, false information goes a long way. Put on a convincing wig. Wear fake glasses if you have perfect eyesight. Put pebbles in your shoes to change your gait. If you're brave enough to speak, hint that you came from a different city than you really did. Each bit of false entropy can have serious anonymising power.[2]
+
+## Entropy Bingo card
+
+To conclude, here's a bingo card with some sources of information I thought of that an attacker might use to remove your entropy. If you get a bingo, they've probably got you. It's highly approximate, though I've been careful to keep incompatible or highly correlated sources of information from being in the same row/column/diagonal, as much as possible.
+
+┌─────────────────┬────────────────────┬────────────────┬──────────────────┐
+│ Travel by bike  │ Nearest cell tower │ Use of Matrix  │ Travel by train  │
+│ (~5 bits)       │ (~19 bits)         │ (6 to 8 bits)  │ (~6 bits)        │
+├─────────────────┼────────────────────┼────────────────┼──────────────────┤
+│ IP address      │ Specific Job title │ Age, gender,   │ Use of Linux     │
+│                 │                    │ height         │                  │
+│ (20 to 30 bits) │ (~10 bits?)        │ (5 bits)       │ (5 to 7 bits)    │
+├─────────────────┼────────────────────┼────────────────┼──────────────────┤
+│ Paying in cash  │ Knowledge of 1     │ Use of Tor     │ City you're in   │
+│                 │ person you know    │                │                  │
+│ (~3 bits)       │ (20 bits)          │ (6 to 10 bits) │ (9 to 12 bits)   │
+├─────────────────┼────────────────────┼────────────────┼──────────────────┤
+│ Not carrying a  │ Simple facial      │ Town you're in │ Uncommon hobby   │
+│ a phone         │ features           │                │                  │
+│ (3 to 5 bits)   │ (4 to 6 bits)      │ (16 to 20)     │ (8 to 10 bits)   │
+└─────────────────┴────────────────────┴────────────────┴──────────────────┘
+
+Ironically, many of the things on the bingo board, like Matrix, Tor, and Linux, are things which protect your privacy. But because not enough people use them, knowledge that you're using them provides a fair bit of deanonymisation power. The solution: get more people to use them, to protect those that need anonymity.
+
+Disclaimer 2: I think I need to say that my fascination with anonymity doesn't stem from a propensity to perform illegal acts. Though, I would probably say that even if it weren't true. Regardless, I've gotta already be on some watchlists, right? Hello there NSA agent. Think about your life choices. Be more like Snowden.
+
+1: Horrifyingly, here's one example: https://www.nytimes.com/2022/12/22/nyregion/madison-square-garden-facial-recognition.html
+2: Terence Tao talks about this: https://terrytao.wordpress.com/about/anonymity-and-the-internet/
+
+---
+
+You are recieving this email because you opted in via tim.clifford.lol.
+To unsubscribe, email tc565-blog-request@srcf.net with subject line
+"unsubscribe"
+
+--proprietarysoftwareismalware--
+

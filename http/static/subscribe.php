@@ -21,9 +21,10 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     <meta charSet="utf-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <link rel="stylesheet" href="/main.css"/>
+    <link rel="me" href="https://mastodon.lol/@timclifford"/>
   </head>
   <body>
-    <div class="${COLOR}">
+    <div class="purple">
       <div class="Topbar_div">
         <nav class="Topbar_nav">
           <a class="topbar-title" href="/">
@@ -31,11 +32,10 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
           </a>
           <ul>
             <li><a href="/about/">About</a></li>
-            <li><a href="/dracula/">Dracula</a></li>
-            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/music/">Music</a></li>
             <li>
               <a href="/blog/"
-                 class="Topbar_bigbutton">SourceHut
+                 class="Topbar_bigbutton">Blog
               </a>
             </li>
           </ul>
@@ -63,23 +63,22 @@ if (strlen($error) == 0) {
 ?>
         </div></div>
       </div>
-      <div style="background:#20222b;padding:60px 0">
-        <p class="credits">
-          The design is from
-          <a class="cyan" href="https://draculatheme.com" target="blank">
-            draculatheme.com
-          </a>,
-          <br/>
-          made with <span class="love">♥</span> by
-          <a class="green" href="https://zenorocha.com" target="blank">
-            Zeno Rocha
-          </a>
-          <br/>
-            under
-          <a class="orange" href="http://zenorocha.mit-license.org/" target="blank">
-            MIT license
-          </a>
-        </p>
+      <div class="footer">
+        <table class="noborder" style="border: 0px solid; width: 100%"><tr>
+          <td><a href="https://www.srcf.net" class="nounderline">
+            <img style="min-height: 48pt; padding-right:10pt"
+                 src="/srcf.svg" alt="The logo of the SRCF"></img>
+          </a></td>
+          <td style="text-align: center"><i>
+            This site is hosted by the Student Run Computing Facility, and
+            uses a Dracula theme
+          </i></td>
+          <td><a href="https://draculatheme.com" class="nounderline">
+            <img style="min-height: 48pt; padding-left:10pt"
+                 src="/dracula.svg" alt="The logo of the Dracula theme">
+            </img>
+          </a></td>
+        </tr></table>
       </div>
     </div>
   </body>
