@@ -97,7 +97,7 @@ body {
 .yellow .topbar-title:hover { color: rgba(241, 250, 140, 1); }
 
 hr {
-  margin: 0px 0px 10px 0px;
+  margin: 10px 0px 10px 0px;
 }
 
 nav {
@@ -839,6 +839,105 @@ blockquote {
 
 blockquote p {
   display: inline;
+}
+
+.cyan .comments h2,
+.cyan .comment-submit h2,
+.cyan .comment-submit input[type="text"],
+.cyan .comment-submit input[type="email"],
+.cyan .comment-submit textarea
+	{ color: #8be9fd; }
+.green .comments h2,
+.green .comment-submit h2,
+.green .comment-submit input[type="text"],
+.green .comment-submit input[type="email"],
+.green .comment-submit textarea
+	{ color: #50fa7b; }
+.orange .comments h2,
+.orange .comment-submit h2,
+.orange .comment-submit input[type="text"],
+.orange .comment-submit input[type="email"],
+.orange .comment-submit textarea
+	{ color: #ffb86c; }
+.red .comments h2,
+.red .comment-submit h2,
+.red .comment-submit input[type="text"],
+.red .comment-submit input[type="email"],
+.red .comment-submit textarea
+	{ color: #ff5555; }
+.pink .comments h2,
+.pink .comment-submit h2,
+.pink .comment-submit input[type="text"],
+.pink .comment-submit input[type="email"],
+.pink .comment-submit textarea
+	{ color: #ff79c6; }
+.purple .comments h2,
+.purple .comment-submit h2,
+.purple .comment-submit input[type="text"],
+.purple .comment-submit input[type="email"],
+.purple .comment-submit textarea
+	{ color: #bd93f9; }
+.yellow .comments h2,
+.yellow .comment-submit h2,
+.yellow .comment-submit input[type="text"],
+.yellow .comment-submit input[type="email"],
+.yellow .comment-submit textarea
+	{ color: #f1fa8c; }
+
+.cyan .comment-submit input[type="submit"] { background: #8be9fd; }
+.green .comment-submit input[type="submit"] { background: #50fa7b; }
+.orange .comment-submit input[type="submit"] { background: #ffb86c; }
+.red .comment-submit input[type="submit"] { background: #ff5555; }
+.pink .comment-submit input[type="submit"] { background: #ff79c6; }
+.purple .comment-submit input[type="submit"] { background: #bd93f9; }
+.yellow .comment-submit input[type="submit"] { background: #f1fa8c; }
+
+.comments, .comment-submit {
+  max-width: 640px;
+  padding: 0 2rem;
+  margin: 20px auto;
+}
+
+.comments h4 {
+	margin: 0;
+}
+
+.comment-header {
+  display: flex;
+}
+
+.comment-content {
+  margin-left: 20px;
+}
+
+.comment-date {
+  flex-grow: 100;
+  text-align: right;
+}
+
+.comment-submit form {
+  margin-top: 10px;
+}
+
+.comment-submit input, .comment-submit textarea {
+  border-radius: 4px;
+  font-family: "Source Sans Pro";
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+}
+
+.comment-submit input[type="text"],
+.comment-submit input[type="email"],
+.comment-submit textarea {
+  background: #252525;
+}
+
+.comment-submit input[type="submit"] {
+  color: #252525;
+  cursor: pointer;
 }
 
 .blog-updates {

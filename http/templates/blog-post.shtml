@@ -1,0 +1,57 @@
+<!-- vi: set ts=2 sts=2 sw=2 et: -->
+<div class="blog-wrapper">
+  <div class="blog-content">
+    <div class="wrap"><div class="blog">
+      <h1>${TITLE}</h1>
+      <div class="blog-metadata">
+        <img class="blog-author-avatar" src="https://tim.clifford.lol/avatar_48.png" alt="Tim Clifford">
+        <span class="blog-author-name">Tim Clifford</span>
+        <span class="blog-author-separator">/</span>
+        <time datetime="${DATE}">${DATE}</time>
+      </div>
+      <div>
+        ${CONTENT}
+      </div>
+    </div>
+    <div class="comments">
+      <h2>Comments</h2>
+      <!--#include virtual="./comments.html" -->
+    </div>
+    <div class="comment-submit">
+      <h2>New comment</h2>
+      <form class="noborder" action="/cgi-bin/submit_comment.py" method="post" accept-charset="utf-8">
+        <input type="hidden" id="post" name="post" value="${URL_PART}"/>
+        <table>
+          <tr>
+            <td>Name:</td>
+            <td><input type="text" id="name" name="name" placeholder="Anonymous"/></td>
+          </tr>
+          <tr>
+            <td>Email (optional)<br>(for notifications):</td>
+            <td><input type="email" id="email" name="email" /></td>
+          </tr>
+          <tr>
+            <td>Comment:</td>
+            <td><textarea id="comment" name="comment"></textarea></td>
+          </tr>
+          <tr>
+            <td>Write 'lethologica'<br>(anti-spam):</td>
+            <td><input type="text" id="antispam" name="antispam"/></td>
+        </table>
+        <div>
+          <input type="submit" value="Submit comment"/>
+        </div>
+      </form>
+    </div></div>
+    <div class="blog-updates">
+      <h3>Stay up to date</h3>
+      <p>All the rants, straight to your inbox</p>
+      <form method="post" action="/subscribe.php" class="form">
+        <input type="email" name="email" placeholder="Your email address"/>
+        <input type="hidden" name="return-path" value="/blog"/>
+        <input type="submit" name="email-button" value="Subscribe"/>
+      </form>
+    </div>
+  </div>
+</div>
+

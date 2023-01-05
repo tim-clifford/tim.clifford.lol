@@ -83,13 +83,14 @@ html_build_blog_post() { # reads tsv color, date, file
 	export COLOR="$(echo "$tsv" | cut -f 1)"
 	export DATE="$(echo "$tsv" | cut -f 2)"
 	export TITLE="$(md_get_metadata $file title)"
+	export URL_PART="$basename_noext"
 
 	mkdir -p out/http/blog/$basename_noext
-	out_file="out/http/blog/$basename_noext/index.html"
+	out_file="out/http/blog/$basename_noext/index.shtml"
 
 	<$file md_strip_yaml | md_color_headings $COLOR \
 		| pandoc --from markdown --to html \
-		| activate_double_template http/templates/blog-post.html >$out_file
+		| activate_double_template http/templates/blog-post.shtml >$out_file
 
 	find "$(dirname "$file")" -mindepth 1 ! -name index.md \
 		| xargs -I% cp -r % "$(dirname $out_file)"
