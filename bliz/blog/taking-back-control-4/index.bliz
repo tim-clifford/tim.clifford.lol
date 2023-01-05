@@ -142,3 +142,9 @@ Facebook Messenger, Discord, Telegram, SMS, Snapchat, Instagram DMs, ...
 
 => https://en.wikipedia.org/wiki/Chekhov%27s_gun 1: https://en.wikipedia.org/wiki/Chekhov%27s_gun
 => https://www.gnu.org/philosophy/free-sw.html 2: https://www.gnu.org/philosophy/free-sw.html
+
+%%%
+cat serve/blog/entropy-bingo/comments.gmi
+%%%
+
+=> ./submit/ Add a comment!

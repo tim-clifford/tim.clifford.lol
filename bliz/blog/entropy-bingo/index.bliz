@@ -84,3 +84,9 @@ Disclaimer 2: I think I need to say that my fascination with anonymity doesn't s
 
 => https://www.nytimes.com/2022/12/22/nyregion/madison-square-garden-facial-recognition.html 1: Horrifyingly, here's one example
 => https://terrytao.wordpress.com/about/anonymity-and-the-internet/ 2: Terence Tao talks about this
+
+%%%
+cat serve/blog/entropy-bingo/comments.gmi
+%%%
+
+=> ./submit/ Add a comment!

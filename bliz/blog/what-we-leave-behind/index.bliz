@@ -15,3 +15,8 @@ So, if you're that future person, digging through the archives of ancient times:
 
 Is coffee still around?
 
+%%%
+cat serve/blog/entropy-bingo/comments.gmi
+%%%
+
+=> ./submit/ Add a comment!

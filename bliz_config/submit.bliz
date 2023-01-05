@@ -1,0 +1,31 @@
+%%%
+if test -z $req_query
+	gem_header 10 'Enter your comment:'
+else
+	rm serve$req_path # ourself
+
+	set post (echo $req_path | perl -pe 's|.*/(.*)/submit/[^/]*|$1|')
+	set name (echo $req_path | perl -pe 's|.*/(.*?)\&.*|$1|')
+	set ts (echo $req_path | perl -pe 's|.*/.*?\&(.*)\..*|$1|')
+
+	set name (string unescape --style=url $name)
+	set ts (string unescape --style=url $ts)
+	set comment (string unescape --style=url $req_query)
+
+	set folder "$HOME/blog_comments/$post/$ts"
+	if test -d $folder
+		gem_header 59 "Comment already exists"
+		exit
+	end
+
+	mkdir -p "$folder"
+	printf '%s' "$name" > "$folder/name"
+	printf '%s' "$post" > "$folder/post"
+	printf '%s' "$comment" > "$folder/comment"
+
+	python3 ~/gen_comments.py "$post" >/dev/null
+
+	gem_header 20 'text/plain'
+	echo "Comment submitted :)"
+end
+%%%

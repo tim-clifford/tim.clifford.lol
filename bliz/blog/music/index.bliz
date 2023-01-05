@@ -12,3 +12,9 @@ I'm not trying to become an influencer or a professional musician or anything, I
 If you're interested, check out my first upload:
 
 => https://dalek.zone/w/g9Sx4wZkweWS5C61ATVo2E Cover | "Never Knew" by Ludovique
+
+%%%
+cat serve/blog/entropy-bingo/comments.gmi
+%%%
+
+=> ./submit/ Add a comment!

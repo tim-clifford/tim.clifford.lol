@@ -50,3 +50,9 @@ That's all from me! More blog posts to come.
 => https://github.com/tim-clifford/xournalpp 2: https://github.com/tim-clifford/xournalpp
 => https://github.com/jeffreytse/zsh-vi-mode/pull/89 3: https://github.com/jeffreytse/zsh-vi-mode/pull/89
 => https://zenorocha.com 4: https://zenorocha.com
+
+%%%
+cat serve/blog/entropy-bingo/comments.gmi
+%%%
+
+=> ./submit/ Add a comment!

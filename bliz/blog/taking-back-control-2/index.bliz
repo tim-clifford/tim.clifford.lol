@@ -47,3 +47,9 @@ I'll keep this bit short, I just wanted to say: please let me know your opinions
 
 => https://drewdevault.com/2018/08/08/Signal.html 1: https://drewdevault.com/2018/08/08/Signal.html
 => https://en.wikipedia.org/wiki/Attack_surface 2: https://en.wikipedia.org/wiki/Attack_surface
+
+%%%
+cat serve/blog/entropy-bingo/comments.gmi
+%%%
+
+=> ./submit/ Add a comment!
