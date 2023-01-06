@@ -49,7 +49,7 @@ I'll keep this bit short, I just wanted to say: please let me know your opinions
 => https://en.wikipedia.org/wiki/Attack_surface 2: https://en.wikipedia.org/wiki/Attack_surface
 
 %%%
-cat serve/blog/entropy-bingo/comments.gmi
+cat serve/blog/taking-back-control-2/comments.gmi
 %%%
 
 => ./submit/ Add a comment!

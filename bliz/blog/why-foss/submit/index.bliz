@@ -6,13 +6,11 @@ else
 	set loc_parent (echo $req_path | sed 's/index.bliz$//;s|[^/]$|&/|')
 	if ! echo $loc_parent | grep -Eq 'submit/$'
 		gem_header 42 "Something went wrong"
+		exit 1
 	end
 	set blog_dir (echo $loc_parent | sed -E 's|.*/(.*)/submit/|\1|')
 	set loc (printf "%s%s&%s.bliz" $loc_parent $req_query (string escape --style=url (date +%s.%6N)))
 	cp personal/submit.bliz "serve/$loc"
-	# why does gem_header not work??
-	#gem_header 20 'text/plain'
-	#echo "30 $loc"
 	gem_header 30 "$loc"
 end
 %%%

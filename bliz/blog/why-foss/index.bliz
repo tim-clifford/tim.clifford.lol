@@ -52,7 +52,7 @@ That's all from me! More blog posts to come.
 => https://zenorocha.com 4: https://zenorocha.com
 
 %%%
-cat serve/blog/entropy-bingo/comments.gmi
+cat serve/blog/why-foss/comments.gmi
 %%%
 
 => ./submit/ Add a comment!
