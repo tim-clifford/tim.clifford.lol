@@ -25,7 +25,7 @@ def get_inner_html(): # side effects!
 		if r[0] == ip_address:
 			timestamps = [x for x in r[1:] if float(x) > now.timestamp() - 10*60]
 			if len(timestamps) > 5:
-				return (403, '<div style="color: #ff5555;">Sorry, you\'ve been ratelimited. Try again later.</div>')
+				return (429, '<div style="color: #ff5555;">Sorry, you\'ve been ratelimited. Try again later.</div>')
 			else:
 				rate_limits[i] = [rate_limits[i][0]] + timestamps + [str(now.timestamp())]
 			break
