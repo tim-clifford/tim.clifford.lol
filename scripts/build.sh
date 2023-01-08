@@ -22,7 +22,28 @@ build_rss() {
 		do
 			export TITLE="$(md_get_metadata "$post" title)"
 			export URL="https://tim.clifford.lol/$(echo "$post" | sed -E 's/\.md$/.html/;s/index.html$//')"
-			export DESCRIPTION="$(md_strip_yaml <$post | pandoc -f markdown -t html | html_escape)"
+			export DESCRIPTION="$(md_strip_yaml <$post | pandoc -f markdown -t html \
+				| perl -pe "$(cat << 'EOF'
+BEGIN{undef $/;}
+
+sub get_title {
+	$title = $_[0];
+	return $title if $title =~ s/.*?title="(.*?)".*/$1/smg;
+}
+
+sub get_link {
+	$link = $_[0];
+	return $link if $link =~ s/.*?src="(.*?)".*/$1/smg;
+}
+
+sub get_a {
+	$iframe = $_[0];
+	return '<a href="' . get_link($iframe) . '">' . get_title($iframe) . "</a>\n";
+}
+
+s/(<iframe.*?(\/>|<\/iframe>))/get_a($1)/smge;
+EOF
+			)" | html_escape)"
 			export DATE="$(date --rfc-email --date="$(md_get_metadata "$post" createdAt)")"
 			envsubst <http/templates/rss-item.xml
 		done
