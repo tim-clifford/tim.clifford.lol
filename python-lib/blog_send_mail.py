@@ -44,5 +44,3 @@ if __name__ == "__main__":
 		exit(1)
 
 	send_mail(argv[1])
-
-

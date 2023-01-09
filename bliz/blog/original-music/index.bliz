@@ -54,3 +54,9 @@ You'll notice that my recording is a little quieter than other music if you list
 => https://tim.clifford.lol/music/ 2: https://tim.clifford.lol/music/
 => https://www.merriam-webster.com/dictionary/noodle 3: noodle, noodled, noodling (verb): to improvise on an instrument in an informal or desultory manner
 4: Which isn't really anything to do with Linux, it's more to do with companies like Adobe managing to gain a stranglehold.
+
+%%%
+cat serve/blog/original-music/comments.gmi
+%%%
+
+=> ./submit/ Add a comment!

@@ -70,7 +70,7 @@ def gem_update(post):
 > {comment}
 """
 	if comment_gem == "## Comments\n":
-		comment_gem += '\nNo comments yet! Tell me what you think!'
+		comment_gem += '\nNo comments yet! Tell me what you think!\n'
 
 	open(f"{blog_dir}/comments.gmi", "w").write(comment_gem)
 
