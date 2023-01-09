@@ -12,7 +12,8 @@ RewriteRule ^why_pgp$ https://tim.clifford.lol/why-pgp [L,R=301]
 RewriteRule ^why-foss$ https://tim.clifford.lol/blog/why-foss [L,R=301]
 
 ## Might change later, shouldn't get people to subscribe directly
-RewriteRule ^music/rss.xml https://dalek.zone/feeds/videos.xml?videoChannelId=18406 [L,R=302]
+#RewriteRule ^music/rss.xml https://dalek.zone/feeds/videos.xml?videoChannelId=18406 [L,P]
+RewriteRule ^music/rss.xml /cgi-bin/proxy_rss.py [L]
 
 # Force HTTPS
 RewriteCond %{HTTP_HOST} !^tim\.clifford\.lol$ [NC]
