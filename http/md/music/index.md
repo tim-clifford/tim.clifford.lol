@@ -31,5 +31,18 @@ _"Never Knew" by Ludovique_
   allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"
   frameborder="0" style="min-width: 100%; max-width: 100%; aspect-ratio: 16/9"></iframe>
 
-[Audio-only version](/music/never_knew.aac)
+[Audio-only version](/music/never_knew.flac)
 
+## Licensing
+
+All original music is dual-licensed under [CC BY-NC-SA
+4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) and the
+[Commercial-Derivative 1.0 Public
+Licence](https://tim.clifford.lol/licenses/commercial-derivative-1.0.txt).
+
+Basically, you can use/distribute the works for whatever purpose you want
+non-commercially, and if you make a derivative work (remix, cover, etc) you can
+use that for whatever purpose you want commercially or non-commercially. Your
+derivative works always have to be released under similarly free licenses, but
+that doesn't mean you can't also release them on commercial services like
+Spotify etc.
