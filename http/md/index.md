@@ -13,7 +13,7 @@ source advocate.
   </form>
 </div>
 
-<a href="/blog/rss.xml">Or subscribe via RSS <img style="height: 18px" src="/rss.svg" alt="RSS feed logo"/></a>
+<a href="/blog/rss.xml">Or subscribe via RSS <img style="height: 18px" src="/_icons/rss.svg" alt="RSS feed icon"/></a>
 
 ## Links
 

@@ -2,47 +2,80 @@
 title: "Music"
 ---
 
-This is a place to share my music :] It's mostly for my own benefit, I just
-want my music-making to feel more purposeful than when I'm playing to myself!
-
-The videos are all hosted on PeerTube, which is a fantastic alternative to
-YouTube that maintains freedom and privacy, and has no ads or anything like
-that :]
+I make music :]
 
 ## Original Music
 
 _"Autumn Wind"_
 
-<iframe
-  title="&quot;Autumn Wind&quot;"
-  src="https://dalek.zone/videos/embed/3f6a49e8-22b9-4db3-bfd7-05c6c415f73b"
-  allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"
-  frameborder="0" style="min-width: 100%; max-width: 100%; aspect-ratio: 16/9"></iframe>
-
-[Audio-only version](/music/autumn_wind.flac)
+<div class="music-item">
+ <img class="music-art"
+       src="/music/art/autumn_wind_512.jpg"
+       alt="Cover art for Autumn Wind" />
+ <div class="music-links">
+  <a href="/music/autumn_wind.flac">
+   <img src="/_icons/download.svg" alt="Download icon" />
+   <p>Download</p>
+  </a>
+  <a style="pointer-events: none;">
+   <img src="/_icons/spotify.svg" alt="Spotify logo" />
+   <p>(soon)</p>
+  </a>
+  <a style="pointer-events: none;">
+   <img src="/_icons/apple_music.svg" alt="Apple Music logo" />
+   <p>(soon)</p>
+  </a>
+  <a href="https://dalek.zone/w/8QbJLp7iW5BDuBESC99xZV">
+   <img src="/_icons/peertube.svg" alt="PeerTube logo" />
+   <p>Video</p>
+  </a>
+ </div>
+</div>
 
 ## Covers
 
 _"Never Knew" by Ludovique_
 
-<iframe
-  title="Cover | &quot;Never Knew&quot; by Ludovique"
-  src="https://dalek.zone/videos/embed/7ab62c76-df1a-4eff-8535-b6260514adb0"
-  allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"
-  frameborder="0" style="min-width: 100%; max-width: 100%; aspect-ratio: 16/9"></iframe>
-
-[Audio-only version](/music/never_knew.flac)
+<div class="music-item">
+ <img class="music-art"
+       src="/music/art/never_knew_512.jpg"
+       alt="Cover art for Never Knew by Ludovique" />
+ <div class="music-links">
+  <a href="/music/never_knew.flac">
+   <img src="/_icons/download.svg" alt="Download icon" />
+   <p>Download</p>
+  </a>
+  <a href="https://dalek.zone/w/g9Sx4wZkweWS5C61ATVo2E">
+   <img src="/_icons/peertube.svg" alt="PeerTube logo" />
+   <p>Video</p>
+  </a>
+  <h2>Ludovique's Versions</h2>
+  <a href="https://open.spotify.com/track/6cHwWjZHAFxvj7FIZZFoq0">
+   <img src="/_icons/spotify.svg" alt="Spotify logo" />
+   <p>Spotify</p>
+  </a>
+  <a href="https://youtube.com/watch?v=QP8SJMKEWio">
+   <img src="/_icons/youtube.svg" alt="YouTube logo" />
+   <p>YouTube</p>
+  </a>
+  <!--
+  <a href="https://youtube.com/watch?v=er6E8_7Ni2E">
+   <img src="/_icons/youtube.svg" alt="YouTube logo" />
+   <p>YouTube (alternate)</p>
+  -->
+  </a>
+ </div>
+</div>
 
 ## Licensing
 
-All original music is dual-licensed under [CC BY-NC-SA
+All original musical content is dual-licensed under [CC BY-NC-SA
 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) and the
 [Commercial-Derivative 1.0 Public
 Licence](https://tim.clifford.lol/licenses/commercial-derivative-1.0.txt).
 
-Basically, you can use/distribute the works for whatever purpose you want
-non-commercially, and if you make a derivative work (remix, cover, etc) you can
-use that for whatever purpose you want commercially or non-commercially. Your
-derivative works always have to be released under similarly free licenses, but
-that doesn't mean you can't also release them on commercial services like
-Spotify etc.
+Basically, you can use/distribute/etc the works non-commercially, and if you
+make a derivative work (remix, cover, etc) you can use that for whatever
+purpose you want commercially or non-commercially. Your derivative works always
+have to be released under similarly free licenses, but that doesn't mean you
+can't also release them on commercial services like Spotify etc.

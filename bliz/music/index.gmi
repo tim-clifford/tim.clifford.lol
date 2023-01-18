@@ -6,13 +6,13 @@ The videos are all hosted on PeerTube, which is a fantastic alternative to YouTu
 
 ## Original Music
 
-=> https://dalek.zone/w/8QbJLp7iW5BDuBESC99xZV "Autumn Wind" (Video)
-=> /music/autumn_wind.flac "Autumn Wind" (Audio)
+=> /music/autumn_wind.flac "Autumn Wind"
+=> https://dalek.zone/w/8QbJLp7iW5BDuBESC99xZV "Autumn Wind" (video)
 
 ## Covers
 
-=> https://dalek.zone/w/g9Sx4wZkweWS5C61ATVo2E "Never Knew" by Ludovique (Video)
-=> /music/never_knew.flac "Never Knew" by Ludovique (Audio)
+=> /music/never_knew.flac Cover | "Never Knew" by Ludovique
+=> https://dalek.zone/w/g9Sx4wZkweWS5C61ATVo2E Cover | "Never Knew" by Ludovique (video)
 
 ## Licensing
 
@@ -21,9 +21,8 @@ All original music is dual-licensed under:
 => https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0
 => /licenses/commercial-derivative-1.0.txt Commercial-Derivative 1.0
 
-Basically, you can use/distribute the works for whatever purpose you want
-non-commercially, and if you make a derivative work (remix, cover, etc) you can
-use that for whatever purpose you want commercially or non-commercially. Your
-derivative works always have to be released under similarly free licenses, but
-that doesn't mean you can't also release them on commercial services like
-Spotify etc.
+Basically, you can use/distribute/etc the works non-commercially, and if you
+make a derivative work (remix, cover, etc) you can use that for whatever
+purpose you want commercially or non-commercially. Your derivative works always
+have to be released under similarly free licenses, but that doesn't mean you
+can't also release them on commercial services like Spotify etc.
