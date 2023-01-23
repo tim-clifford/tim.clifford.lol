@@ -35,7 +35,7 @@ Please don't reply to this email."""
 			subscriber,
 			f"Blog | New comment on {post_data['post']}",
 			mail_body,
-			sender=("Tim's blog", "blog@clifford.lol")
+			sender=("Tim's blog comment system", "blog-comments@clifford.lol")
 		)
 
 if __name__ == "__main__":
