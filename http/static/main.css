@@ -1299,6 +1299,21 @@ blockquote p {
   flex-direction: column;
 }
 
+.music-links .predatory-services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.music-links .predatory-services a {
+  width: 15%;
+  min-width: 32px;
+}
+
+.music-links .predatory-services img {
+  width: 100%;
+}
+
 .music-links a {
   margin-top: 8px;
   margin-bottom: 8px;
@@ -1308,7 +1323,6 @@ blockquote p {
 }
 
 .music-links img {
-  /*height: 20%;*/
   width: 8%;
   min-width: 24px;
   margin-right: 24px;

@@ -17,18 +17,35 @@ _"Autumn Wind"_
    <img src="/_icons/download.svg" alt="Download icon" />
    <p>Download</p>
   </a>
-  <a style="pointer-events: none;">
-   <img src="/_icons/spotify.svg" alt="Spotify logo" />
-   <p>(soon)</p>
-  </a>
-  <a style="pointer-events: none;">
-   <img src="/_icons/apple_music.svg" alt="Apple Music logo" />
-   <p>(soon)</p>
+  <a href="https://tim-clifford.bandcamp.com/track/autumn-wind/">
+   <img src="/_icons/bandcamp.png" alt="Bandcamp logo" />
+   <p>Bandcamp</p>
   </a>
   <a href="https://dalek.zone/w/8QbJLp7iW5BDuBESC99xZV">
    <img src="/_icons/peertube.svg" alt="PeerTube logo" />
    <p>Video</p>
   </a>
+  <h2>Immoral proprietary platforms</h2>
+  <div class="predatory-services">
+   <a href="https://open.spotify.com/track/0oxEe0wXlONZyN725XJGk6">
+    <img src="/_icons/spotify.svg" alt="Spotify logo" />
+   </a>
+   <a href="https://music.apple.com/gb/album/autumn-wind/1665667480">
+    <img src="/_icons/apple_music.svg" alt="Apple Music logo" />
+   </a>
+   <a href="https://music.youtube.com/watch?v=1VUtIObBvlg">
+    <img src="/_icons/youtube_music.svg" alt="YouTube Music logo" />
+   </a>
+   <a href="https://tidal.com/track/271607621">
+    <img src="/_icons/tidal.svg" alt="Tidal logo" />
+   </a>
+   <a href="https://deezer.page.link/8L4We7yF1i64LTRg6">
+    <img src="/_icons/deezer.svg" alt="Deezer logo" />
+   </a>
+   <a href="https://music.amazon.co.uk/albums/B0BSFQXZHV">
+    <img src="/_icons/amazon_music.svg" alt="Amazon Music logo" />
+   </a>
+  </div>
  </div>
 </div>
 
