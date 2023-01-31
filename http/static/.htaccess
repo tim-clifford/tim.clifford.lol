@@ -1,3 +1,8 @@
+# I could... but... I'm too curious about their spam
+# I got bored
+Deny from 45.143.201.87
+Deny from 37.139.53.82
+
 RewriteEngine On
 
 # Some alternate urls

@@ -34,9 +34,13 @@ def get_inner_html(): # side effects!
 
 	open("/home/tc565/blog_comments/rate_limit", "w").write("\n".join(("\t".join(x) for x in rate_limits)))
 
+	raw_data = stdin.read()
+
+	open("/home/tc565/logs/blog_comment_POST", "a").write(f"[{now.isoformat()}] " + raw_data + "\n")
+
 	post_data = {}
 
-	for x in stdin.read().split("&"):
+	for x in raw_data.split("&"):
 		s = x.split("=")
 		if len(s) != 2:
 			return (400, '<div style="color: #ff5555;">Invalid input (0)</div>')
