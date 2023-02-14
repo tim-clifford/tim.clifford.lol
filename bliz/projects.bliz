@@ -24,6 +24,16 @@
 => https://git.sr.ht/~tim-clifford/RedditGarlicRobot u/garlicbot, a reddit bot from 2017 which gave people virtual garlic bread
 => https://git.sr.ht/~tim-clifford/casio-cpong PONG written for the fx9860gII calculator
 
+## Unfinished or Future projects
+
+* TIMTIM, The Timbre-Informed Musical Transcription Inference Machine
+* A bunch of practical transcription stuff after TIMTIM
+* Dracula for everything (compositor level mapping)
+* Add N-body mechanics (non-rails) simulation to Celestia
+* Set up call whitelisting (automatic "go away" messages) on PinePhone
+* Can Matrix run DOOM?
+* Matrix transport over SMS/MMS?
+
 ## Dracula themes
 
 I've made *a lot*. They look nice, okay? (and there are more coming)

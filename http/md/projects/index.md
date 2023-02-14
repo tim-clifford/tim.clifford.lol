@@ -58,3 +58,19 @@ Fun things I've worked on in the past
     <img align="center" class="gh-repo" src="https://github-readme-stats.vercel.app/api/pin/?username=tim-clifford&amp;repo=astrodynamics-sim&amp;theme=dracula&amp;hide_border=true"/>
   </a>
 </div>
+
+## Unfinished/Future projects
+
+- TIMTIM, The Timbre-Informed Musical Transcription Inference Machine
+
+- A bunch of practical transcription stuff after TIMTIM
+
+- Dracula for everything (compositor level mapping)
+
+- Add N-body mechanics (non-rails) simulation to Celestia
+
+- Set up call whitelisting (automatic "go away" messages) on PinePhone
+
+- Can Matrix run DOOM?
+
+- Matrix transport over SMS/MMS?

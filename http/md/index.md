@@ -15,6 +15,13 @@ source advocate.
 
 <a href="/blog/rss.xml">Or subscribe via RSS <img style="height: 18px" src="/_icons/rss.svg" alt="RSS feed icon"/></a>
 
+If you like what I make, please consider donating, I'm still a poor student (:
+
+<a class="nounderline" href="https://liberapay.com/tim-clifford/donate">
+	<img alt="Donate using Liberapay"
+	     src="/_icons/liberapay.svg"/>
+</a>
+
 ## Links
 
 Also see the links in the top right :]

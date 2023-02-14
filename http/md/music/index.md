@@ -4,6 +4,13 @@ title: "Music"
 
 I make music :]
 
+If you like it, please consider donating, I'm still a poor student (:
+
+<a class="nounderline" href="https://liberapay.com/tim-clifford/donate">
+	<img alt="Donate using Liberapay"
+	     src="/_icons/liberapay.svg"/>
+</a>
+
 ## Original Music
 
 _"Autumn Wind"_
@@ -25,7 +32,7 @@ _"Autumn Wind"_
    <img src="/_icons/peertube.svg" alt="PeerTube logo" />
    <p>Video</p>
   </a>
-  <h2>Immoral proprietary platforms</h2>
+  <h2>Unethical proprietary platforms</h2>
   <div class="predatory-services">
    <a href="https://open.spotify.com/track/0oxEe0wXlONZyN725XJGk6">
     <img src="/_icons/spotify.svg" alt="Spotify logo" />
