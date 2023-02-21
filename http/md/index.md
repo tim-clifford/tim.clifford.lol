@@ -2,9 +2,9 @@
 title: "Tim Clifford"
 ---
 
-I'm an engineering student, amateur musician,
-[cypherpunk](/documents/cypherpunks-manifesto.html), and free (libre) / open
-source advocate.
+Part-time musician, full-time procrastinator, supposedly full-time engineering
+student. Also a [cypherpunk](/documents/cypherpunks-manifesto.html) and free
+(libre) / open source advocate.
 
 <div class="blog-updates-small">
   <form method="post" action="/subscribe.php" class="form">

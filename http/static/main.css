@@ -28,6 +28,7 @@ body {
 }
 
 .page h2 {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -1323,8 +1324,9 @@ blockquote p {
 }
 
 .music-links img {
-  width: 8%;
+  width: 12%;
   min-width: 24px;
+  max-width: 48px;
   margin-right: 24px;
   object-fit: contain;
   vertical-align: middle;
@@ -1342,6 +1344,11 @@ blockquote p {
   margin-top: 8px;
   margin-bottom: 0px;
   vertical-align: middle;
+}
+
+.banner img {
+	width: 100vw;
+	margin: -20px 0 0 0;
 }
 
 /*@media screen and (max-width: 420px) {*/

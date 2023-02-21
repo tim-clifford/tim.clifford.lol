@@ -1,5 +1,9 @@
+<div class="banner">
+</div>
+
 ---
 title: "Music"
+banner: "/banner.jpg: Tim playing guitar for a crowd at a Student Windsurfing Association event"
 ---
 
 I make music :]
@@ -11,9 +15,58 @@ If you like it, please consider donating, I'm still a poor student (:
 	     src="/_icons/liberapay.svg"/>
 </a>
 
-## Original Music
+## Noodles
 
-_"Autumn Wind"_
+_noodle (verb): to improvise on an instrument in an informal or desultory
+manner_&nbsp; [[link]](https://www.merriam-webster.com/dictionary/noodle)
+
+<div class="music-item">
+ <img class="music-art"
+       src="/music/art/noodles_vol_0_512.jpg"
+       alt="Cover art for Noodles Vol. 0" />
+ <div class="music-links">
+  <a href="/music/noodles/vol_0.zip">
+   <img src="/_icons/download.svg" alt="Download icon" />
+   <p>Download</p>
+  </a>
+  <a href="/music/noodles/vol_0.m3u">
+   <img src="/_icons/stream.svg" alt="Stream icon" />
+   <p>M3U Stream</p>
+  </a>
+  <a href="https://tim-clifford.bandcamp.com/album/noodles-vol-0-reflections-and-phantoms">
+   <img src="/_icons/bandcamp.png" alt="Bandcamp logo" />
+   <p>Bandcamp</p>
+  </a>
+  <h2>Unethical proprietary platforms</h2>
+  <div class="predatory-services">
+  <p>
+   Available from 2023-03-05
+  </p>
+  <!--
+   <a style="pointer-events: none;">
+    <img src="/_icons/spotify.svg" alt="Spotify logo" />
+   </a>
+   <a style="pointer-events: none;">
+    <img src="/_icons/apple_music.svg" alt="Apple Music logo" />
+   </a>
+   <a style="pointer-events: none;">
+    <img src="/_icons/youtube_music.svg" alt="YouTube Music logo" />
+   </a>
+   <a style="pointer-events: none;">
+    <img src="/_icons/tidal.svg" alt="Tidal logo" />
+   </a>
+   <a style="pointer-events: none;">
+    <img src="/_icons/deezer.svg" alt="Deezer logo" />
+   </a>
+   <a style="pointer-events: none;">
+    <img src="/_icons/amazon_music.svg" alt="Amazon Music logo" />
+   </a>
+   -->
+  </div>
+ </div>
+</div>
+
+## Songs
 
 <div class="music-item">
  <img class="music-art"

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	<g data-name="stream">
+		<path fill="#8be9fd" d="M19 13h-2a5 5 0 0 0-10 0H5a7 7 0 0 1 14 0z"/>
+		<path fill="#8be9fd" d="M15 13h-2a1 1 0 0 0-2 0H9a3 3 0 0 1 6 0zM11 15h2v2h-2z"/>
+		<path fill="#8be9fd" d="M12 24a12 12 0 1 1 12-12 12.013 12.013 0 0 1-12 12zm0-22a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2z"/>
+	</g>
+</svg>

@@ -39,10 +39,18 @@ html_build_md_page() { # $1: filename, writes to out/http/
 	echo "$escaped_name"
 
 	out_file="$(echo "$file" | sed 's|^http/md/|out/http/|; s|.md$|.html|')"
-	mkdir -p "$(dirname $out_file)"
+	mkdir -p "$(dirname "$out_file")"
 
 	export COLOR="$(<config.yaml yq -rc ".page_colors.$escaped_name")"
-	export TITLE="$(md_get_metadata $file title)"
+	export TITLE="$(md_get_metadata "$file" title)"
+
+	banner="$(md_get_metadata "$file" banner)"
+
+	if [ "$banner" != "null" ]; then
+		src="$(echo "$banner" | cut -d':' -f1)"
+		alt="$(echo "$banner" | cut -d':' -f2- | sed 's/^ *//')"
+		export BANNER="<div class=\"banner\"><img src=\"$src\" alt=\"$alt\"/></div>"
+	fi
 
 	<$file md_color_headings $COLOR | pandoc --from markdown --to html \
 		| activate_double_template http/templates/default.html >$out_file

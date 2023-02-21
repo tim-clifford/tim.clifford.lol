@@ -48,7 +48,7 @@ title: "Chat systems explained"
                                     |  probably)  |
                                     +-------------+
 
-* It is very plausible that the Whatsapp client's encryption is backdoored, intentionally or not. How would we know, when we can't see the code? Maybe it isn't: legendary security expert Ross Anderson doesn't think it is. But why take the risk? Regardless, we know that Facebook uses Whatsapp metadata for tracking and advertising. We still shouldn't use it.
+* It is very plausible that the Whatsapp client's encryption is backdoored, intentionally or not. How would we know, when we can't see the code? Maybe it isn't: many security experts don't think it is. But why take the risk? Regardless, we know that Facebook uses Whatsapp metadata for tracking and advertising. We still shouldn't use it.
 ```
 
 

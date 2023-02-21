@@ -39,7 +39,7 @@ convert_to_email() { # args -> stdout
 	gemurl="$(echo "$5" | sed 's/^https\?/gemini/')"
 
 	echo "\
-From: blog@clifford.lol
+From: Tim's blog <blog@clifford.lol>
 To: $recipient
 Subject: $subject
 MIME-Version: 1.0
