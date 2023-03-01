@@ -1,4 +1,4 @@
-#!/bin/dash
+#!/bin/bash
 # $1 filename
 
 if [ $# -ne 1 ]; then
@@ -31,10 +31,18 @@ cd - >/dev/null
 
 echo "Built and deployed for gemini and http"
 
+## test!!!
+
+recipients="$(ssh pip srcf-mailman-list tc565-blog | sed -z 's/\n$//;s/\n/, /g')"
+
 <$f_eml msmtp -a blog -- tim@clifford.lol
 
-echo "Sent test email. Press enter to send main or ctrl-c to cancel"
+recipients="tc565@cam.ac.uk"
+
+echo "Sent test email. Press enter to send to: "
+echo "$recipients"
+echo "or ctrl-c to cancel"
 
 read foo
 
-<$f_eml msmtp -t -a blog
+#sed '/^To:.*/aBcc: '"$recipients"'/' $f_eml | msmtp -t -a blog
