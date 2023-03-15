@@ -12,7 +12,7 @@ html_escape() {
 }
 
 build_rss() {
-	posts="$(find blog/ -type f -name 'index.md' | while read post
+	posts="$(find blog/ -mindepth 2 -type f -name 'index.md' | while read post
 		do
 			echo "$(md_get_metadata "$post" createdAt)	$post"
 		done | sort | cut -f2)"
@@ -52,7 +52,7 @@ EOF
 }
 
 build_blog_alts() {
-	find blog/ -type f -name index.md | while read post; do
+	find blog/ -mindepth 2 -type f -name index.md | while read post; do
 		# xargs doesn't work for some reason
 		convert_blog_to_bliz_txt_eml $post
 	done
@@ -65,13 +65,12 @@ build_http() {
 		html_build_md_page "$file"
 	done
 
-	html_build_blog_index
+	html_build_blog_indices
 	build_rss
 
 	blog_sort_color | while read line; do
 		echo "$line" | html_build_blog_post
 	done
-
 
 	cp -r static/* out/http/
 	cp -r http/static/* out/http/

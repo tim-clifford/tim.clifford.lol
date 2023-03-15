@@ -1356,3 +1356,25 @@ blockquote p {
     /*display: none !important;*/
   /*}*/
 /*}*/
+
+.blog-categories {
+	margin-top: 60px;
+}
+
+.blog-category {
+	min-width: 40px;
+	min-height: 80px;
+	background: rgb(26, 27, 34);
+	border-radius: 20px;
+	margin: 20px;
+	text-align: center;
+}
+
+.blog-category:hover {
+	background: #282a36;
+}
+
+.blog-category h2 {
+	margin: 25px;
+	display: inline-block;
+}

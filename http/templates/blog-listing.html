@@ -1,0 +1,23 @@
+<!-- vi: set ts=2 sts=2 sw=2 et: -->
+<div class="blog-wrapper">
+  <div class="blog-content">
+    <div class="wrap"><div class="blog">
+      <h2 style="color: #f8f8f2">
+        <a class="nounderline" href="/blog/rss.xml">
+          <img style="height: 18px" src="/_icons/rss.svg" alt="RSS feed icon"/>
+          Subscribe via RSS
+        </a>
+      </h2>
+      ${CONTENT}
+    </div></div>
+    <div class="blog-updates">
+      <h3>Stay up to date</h3>
+      <p>All the rants, straight to your inbox</p>
+      <form method="post" action="/subscribe.php" class="form">
+        <input type="email" name="email" placeholder="Your email address"/>
+        <input type="hidden" name="return-path" value="/blog"/>
+        <input type="submit" name="email-button" value="Subscribe"/>
+      </form>
+    </div>
+  </div>
+</div>

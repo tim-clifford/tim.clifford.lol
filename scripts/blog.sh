@@ -3,12 +3,14 @@
 cd $(dirname $0)/..
 
 blog_sort_color() {
+	find blog/ -mindepth 2 -type f -name '*.md' | sort | blog_apply_color_to
+}
 
-	# get posts sorted by date
-	sorted_posts="$(find blog/ -type f -name '*.md' | while read post; do
-		date="$(md_get_metadata "$post" createdAt)"
-		echo "$date	$post"
-	done | sort)"
+blog_apply_color_to() {
+
+	sorted_posts="$(while read post; do
+		echo "$(md_get_metadata "$post" createdAt)	$post"
+	done)"
 
 	# get color cycle
 	color_cycle="$(yq -r .color_cycle <config.yaml)"

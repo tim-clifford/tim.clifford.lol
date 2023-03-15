@@ -25,24 +25,20 @@ elif ! test -f $f_eml; then
 	exit 1
 fi
 
-cd $dir
-make all
-cd - >/dev/null
-
 echo "Built and deployed for gemini and http"
 
-## test!!!
+recipients="$(ssh pip srcf-mailman-list tc565-blog | sed -z 's/\n$//;s/\n/ /g')"
 
-recipients="$(ssh pip srcf-mailman-list tc565-blog | sed -z 's/\n$//;s/\n/, /g')"
+#<$f_eml msmtp -a blog -- tim@clifford.lol
 
-<$f_eml msmtp -a blog -- tim@clifford.lol
+#recipients="tc565@cam.ac.uk"
 
-recipients="tc565@cam.ac.uk"
-
-echo "Sent test email. Press enter to send to: "
+#echo -n "Sent test email. "
+echo "Press enter to send to: "
 echo "$recipients"
 echo "or ctrl-c to cancel"
 
 read foo
 
-#sed '/^To:.*/aBcc: '"$recipients"'/' $f_eml | msmtp -t -a blog
+<$f_eml msmtp -a blog $recipients
+#sed '/^To:.*/aBcc: '"$recipients" $f_eml > foo.eml

@@ -56,9 +56,13 @@ html_build_md_page() { # $1: filename, writes to out/http/
 		| activate_double_template http/templates/default.html >$out_file
 }
 
-html_build_blog_items() {
+html_build_blog_all() {
 	# put data into templates and output
-	blog_sort_color | while read post; do
+	blog_sort_color | html_build_blog_from
+}
+
+html_build_blog_from() { # stdin is blog_sort_color equivalent
+	while read post; do
 		test -z "$post" && continue
 		color="$(echo "$post" | cut -f 1)"
 		date="$(echo "$post" | cut -f 2)"
@@ -74,12 +78,35 @@ html_build_blog_items() {
 	done
 }
 
-html_build_blog_index() {
+html_build_blog_indices() {
+	categories="$(yq -rc '.[]' <blog/categories.yaml)"
+	sorted_colored_blogs="$(blog_sort_color)"
+
 	export COLOR="$(yq -r .page_colors._blog <config.yaml)"
 
-	mkdir -p out/http/blog/
-	html_build_blog_items \
+	echo "$categories" | while read -r category; do
+		name="$(echo "$category" | yq -r .name)"
+		shortname="$(echo "$category" | yq -r .shortname)"
+		mkdir -p out/http/blog/$shortname
+
+		posts="$(echo "$category" | yq -rc '.posts[]')"
+		echo "$posts" \
+			| sed 's|^|blog/|;s|$|/index.md|' `# jank` \
+			| blog_apply_color_to \
+			| html_build_blog_from \
+			| activate_double_template http/templates/blog-listing.html \
+				> out/http/blog/$shortname/index.html
+	done
+
+	mkdir -p out/http/blog/all
+
+	html_build_blog_all \
+		| activate_double_template http/templates/blog-listing.html > out/http/blog/all/index.html
+
+	<blog/index.md \
+		  pandoc --from markdown --to html \
 		| activate_double_template http/templates/blog-index.html > out/http/blog/index.html
+
 }
 
 html_build_blog_post() { # reads tsv color, date, file

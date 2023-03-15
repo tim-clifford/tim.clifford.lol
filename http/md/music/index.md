@@ -39,29 +39,24 @@ manner_&nbsp; [[link]](https://www.merriam-webster.com/dictionary/noodle)
   </a>
   <h2>Unethical proprietary platforms</h2>
   <div class="predatory-services">
-  <p>
-   Available from 2023-03-05
-  </p>
-  <!--
-   <a style="pointer-events: none;">
+   <a href="https://open.spotify.com/album/1ArKeSH95I7ORlcrQUliU2">
     <img src="/_icons/spotify.svg" alt="Spotify logo" />
    </a>
-   <a style="pointer-events: none;">
+   <a href="https://music.apple.com/gb/album/noodles-vol-0-reflections-and-phantoms-ep/1673467206">
     <img src="/_icons/apple_music.svg" alt="Apple Music logo" />
    </a>
-   <a style="pointer-events: none;">
+   <a href="https://music.youtube.com/playlist?list=OLAK5uy_mhXgNXjV1AmKR2YRrIhvnMFkCjEnqauIA">
     <img src="/_icons/youtube_music.svg" alt="YouTube Music logo" />
    </a>
-   <a style="pointer-events: none;">
+   <a href="https://tidal.com/browse/album/278101092">
     <img src="/_icons/tidal.svg" alt="Tidal logo" />
    </a>
-   <a style="pointer-events: none;">
+   <a href="https://deezer.page.link/m9UF3beyx5QXF6zo6">
     <img src="/_icons/deezer.svg" alt="Deezer logo" />
    </a>
-   <a style="pointer-events: none;">
+   <a href="https://music.amazon.com/albums/B0BWH86X71">
     <img src="/_icons/amazon_music.svg" alt="Amazon Music logo" />
    </a>
-   -->
   </div>
  </div>
 </div>
