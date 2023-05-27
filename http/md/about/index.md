@@ -17,20 +17,12 @@ quicker!](https://tim.clifford.lol/tim_clifford.asc).
 
 **Anything proprietary**: Don't even think about it
 
-## Other things I do
+## SRCF
 
-### SRCF
-
-I'm the Chair of the Student Run Computing Facility, a volunteer-run student
+I'm a sysadmin for the Student Run Computing Facility, a volunteer-run student
 society that provides free, useful and flexible computing and network services
 for University of Cambridge staff and students. See more
 [here](https://www.srcf.net)
-
-### CUSF
-
-I'm also the Head of DevOps for Cambridge University Spaceflight, a student
-society aiming to reach the Karman Line by <strike>2023</strike> 2024. See more
-[here](https://www.cusf.co.uk)
 
 ## Me in other places
 

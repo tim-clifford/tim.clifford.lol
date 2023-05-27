@@ -8,12 +8,12 @@ banner: "/banner.jpg: Tim playing guitar for a crowd at a Student Windsurfing As
 
 I make music :]
 
-If you like it, please consider donating, I'm still a poor student (:
+If you like it, please consider giving me a tip, I'm still a poor student (:
 
 <a class="nounderline" href="https://liberapay.com/tim-clifford/donate">
-	<img alt="Donate using Liberapay"
+	<img alt="Tip me using Liberapay"
 	     src="/_icons/liberapay.svg"/>
-</a> (you can also just give cash if you know me personally, which has no transaction fees :D)
+</a>
 
 ## Noodles
 
