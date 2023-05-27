@@ -1,0 +1,35 @@
+%%%
+set -l ip_address "$NCAT_REMOTE_ADDR"
+set -l now (date +%s.%6N)
+set -l limits (cat /home/tc565/blog_comments/rate_limit | sed -n 's/^'"$ip_address"'	//p' | string split \t)
+set -l timestamps (for time in $limits
+	test $time -gt (math "$now-10*60") && echo $time
+end)
+if test (count $timestamps) -gt 5
+	gem_header 44 300
+	exit 1
+else
+	if test -z "$timestamps"
+		printf "%s\t%s\n" "$ip_address" "$now" >> /home/tc565/blog_comments/rate_limit
+	else
+		set -a timestamps $now
+		sed -i '/^'"$ip_address"'/d' /home/tc565/blog_comments/rate_limit
+		printf "%s\t%s" "$ip_address" (string join \t $timestamps) >> /home/tc565/blog_comments/rate_limit
+	end
+end
+
+if test -z $req_query
+	gem_header 10 'Enter your name (or Anonymous)'
+else
+	cd /home/tc565/bliz # sanity check
+	set loc_parent (echo $req_path | sed 's/index.bliz$//;s|[^/]$|&/|')
+	if ! echo $loc_parent | grep -Eq 'submit/$'
+		gem_header 42 "Something went wrong"
+		exit 1
+	end
+	set blog_dir (echo $loc_parent | sed -E 's|.*/(.*)/submit/|\1|')
+	set loc (printf "%s%s&%s.bliz" $loc_parent $req_query (string escape --style=url $now))
+	cp personal/submit_finish.bliz "serve/$loc"
+	gem_header 30 "$loc"
+end
+%%%

@@ -39,9 +39,3 @@ Since, while I'm out and about, I plan to use flumph pretty much only for instan
 ## Is it actually usable?
 
 So I'll admit it took me a while to get everything set up, and there are are still a few niggling annoyances, e.g., I can't get messages over matrix while the screen is locked because the network devices get turned off when it goes to sleep >:, but overall yes, it's very usable, and I barely ever have to go back to Mind Flayer! So that's put me one step closer to fully following my manifesto...
-
-%%%
-cat serve/blog/taking-back-control-3/comments.gmi
-%%%
-
-=> ./submit/ Add a comment!

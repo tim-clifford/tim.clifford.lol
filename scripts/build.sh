@@ -86,6 +86,20 @@ build_bliz() {
 	cp -r bliz/* out/bliz/
 	cp -r static/* out/bliz/
 
+	ls out/bliz/blog/*/index.bliz | while read -r file; do
+	cat >> "$file" << 'EOF'
+
+%%%
+cat (dirname "$blizfile")/comments.gmi
+%%%
+
+=> ./submit/ Add a comment!
+EOF
+	done
+
+	mkdir -p "$(dirname "$file")/submit"
+	cp bliz_config/submit_start.bliz "$(dirname "$file")/submit/index.bliz"
+
 	cp -r bliz/.[!.]* out/bliz/
 	cp -r static/.[!.]* out/bliz/
 }

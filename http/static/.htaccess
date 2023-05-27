@@ -33,7 +33,7 @@ RewriteRule ^(.*)$ https://tim.clifford.lol%{REQUEST_URI} [L,R=301]
 
 ErrorDocument 404 /404.html
 
-SetEnvIf Origin "http(s)?://(.+\.)?clifford\.lol(:\d{1,5})?$" CORS=$0
+SetEnvIf Origin "http(s)?://(.+\.)?(clifford\.lol|tc565\.user\.srcf\.net)(:\d{1,5})?$" CORS=$0
 
 Header set Access-Control-Allow-Origin "%{CORS}e" env=CORS
 Header merge  Vary "Origin"

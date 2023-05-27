@@ -55,9 +55,3 @@ There is a very clear ulterior motive: the government wants to spy on their own 
 => https://en.wikipedia.org/wiki/End-to-end_encryption 4: https://en.wikipedia.org/wiki/End-to-end_encryption
 => gemini://tim.clifford.lol/blog/why-foss/ 5: https://tim.clifford.lol/blog/why-foss
 => https://www.bbc.co.uk/news/uk-england-lincolnshire-58397088 6: https://www.bbc.co.uk/news/uk-england-lincolnshire-58397088
-
-%%%
-cat serve/blog/the-uk-government-is-dangerously-incompetent/comments.gmi
-%%%
-
-=> ./submit/ Add a comment!

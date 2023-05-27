@@ -125,6 +125,8 @@ The research suggests I'll do reasonably well with somewhere between 50/50 and
 
 Let me rank messaging systems then into a few categories of privacy/security:
 
+_[More technical explanation](/documents/chat-systems.html)_
+
 1. Data secure, metadata secure (Matrix, XMPP, IRC; each in ideal circumstances)
 2. Data secure, metadata unknown (Matrix in ordinary circumstances, Signal)
 3. Data unknown, metadata insecure (Whatsapp, Telegram)

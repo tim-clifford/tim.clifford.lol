@@ -13,7 +13,7 @@ If you like it, please consider donating, I'm still a poor student (:
 <a class="nounderline" href="https://liberapay.com/tim-clifford/donate">
 	<img alt="Donate using Liberapay"
 	     src="/_icons/liberapay.svg"/>
-</a>
+</a> (you can also just give cash if you know me personally, which has no transaction fees :D)
 
 ## Noodles
 

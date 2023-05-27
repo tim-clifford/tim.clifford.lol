@@ -128,9 +128,9 @@ title: "Chat systems explained"
 ```
 
 Despite this currently being functionally identical to the Signal threat model,
-there is potential for the whole chain to be trusted in the future. This might
-be achieved by the SRCF running a matrix server (and people trusting the SRCF
-by proxy since they (hopefully) trust Tim).
+there is potential for the whole chain to be trusted in the future. (This might
+become possible soon in Cambridge circles when I get around to running a SRCF
+matrix server, which people should trust if they trust me :)).
 
 In addition, it is less likely that the matrix.org server is an NSA honeypot
 than that the Signal server is an NSA honeypot.
