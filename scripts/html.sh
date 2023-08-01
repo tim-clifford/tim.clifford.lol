@@ -52,6 +52,12 @@ html_build_md_page() { # $1: filename, writes to out/http/
 		export BANNER="<div class=\"banner\"><img src=\"$src\" alt=\"$alt\"/></div>"
 	fi
 
+	css="$(md_get_metadata "$file" css)"
+
+	if [ "$css" != "null" ]; then
+		export CSS="$css"
+	fi
+
 	<$file md_color_headings $COLOR | pandoc --from markdown --to html \
 		| activate_double_template http/templates/default.html >$out_file
 }
