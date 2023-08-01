@@ -1,8 +1,13 @@
 <?php
 $email = $_POST["email"];
 $error = "";
+$response_code = 200;
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 	$error.="Invalid email address. If you're trying to hack me I'll be mad 😠";
+	$response_code = 400;
+} elseif (preg_match("/curl|libcurl/", $_SERVER['HTTP_USER_AGENT'])) {
+	$error.="Sorry, someone is spamming me using curl. If it's you, please stop 😠";
+	$response_code = 429;
 } else {
 	// fix ' to outwit the hackers
 	$email = str_replace("'", "'\"'\"'", $email);
@@ -10,8 +15,10 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 	$retval = null;
 	// hardcode paths and stuff for extra security
 	exec("echo '".$email."' | /usr/bin/ssh shell.srcf.net /usr/local/bin/srcf-mailman-add tc565-blog >> /home/tc565/logs/web-mailman 2>&1", $output, $retval);
-	if ($retval != 0)
+	if ($retval != 0) {
 		$error = "Failed to add email address. Please email me so I can fix it :) Exit code: ".$retval;
+		$response_code=500;
+	}
 }
 ?>
 <html lang="en">
@@ -58,7 +65,7 @@ if (strlen($error) == 0) {
 <?php
 } else {
 	echo '<span style="color: #ff5555; font-weight: bold;">'.$error.'</span>';
-	http_response_code(400);
+	http_response_code($response_code);
 }
 ?>
         </div></div>
